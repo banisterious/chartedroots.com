@@ -1,0 +1,82 @@
+baseURL = 'https://chartedroots.com/'
+languageCode = 'en-us'
+title = 'Charted Roots'
+theme = 'blowfish'
+
+# Enable emoji rendering
+enableEmoji = true
+
+# Build settings
+[build]
+  noJSConfigInAssets = true
+
+[params]
+  # Site settings
+  colorScheme = "ocean"
+  defaultAppearance = "dark"
+  autoSwitchAppearance = true
+
+  # Homepage layout
+  homepage.layout = "custom"
+  homepage.homepageImage = "img/hero.png"
+  homepage.showRecent = false
+
+  # Article settings
+  article.showAuthor = false
+  article.showDate = true
+  article.showReadingTime = true
+  article.showTableOfContents = true
+  article.showPagination = true
+  article.showBreadcrumbs = true
+
+  # List settings
+  list.showBreadcrumbs = true
+  list.showTableOfContents = true
+
+  # Global settings
+  enableSearch = true
+  enableCodeCopy = true
+
+  # Logo and branding
+  logo = "img/logo.png"
+
+  # Footer
+  footer.showCopyright = true
+  footer.showThemeAttribution = false
+  footer.showAppearanceSwitcher = true
+  footer.showScrollToTop = true
+
+[params.author]
+  name = "banisterious"
+
+# Main menu
+[menu]
+  [[menu.main]]
+    name = "Features"
+    pageRef = "features"
+    weight = 10
+  [[menu.main]]
+    name = "Documentation"
+    url = "https://github.com/banisterious/obsidian-charted-roots/wiki"
+    weight = 20
+  [[menu.main]]
+    name = "Changelog"
+    pageRef = "changelog"
+    weight = 30
+  [[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/banisterious/obsidian-charted-roots"
+    weight = 40
+    [menu.main.params]
+      icon = "github"
+
+# Markup settings
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
+
+# Output formats for search
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
