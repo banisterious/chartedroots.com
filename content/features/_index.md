@@ -4,6 +4,8 @@ description: "Comprehensive feature overview of the Charted Roots plugin for Obs
 showTableOfContents: true
 ---
 
+Charted Roots is a genealogy and worldbuilding plugin for Obsidian. Your data lives in plain-text markdown notes; the plugin adds family-tree visualization, evidence tracking, geographic mapping, reports, and worldbuilding tools on top of what Obsidian already does well.
+
 {{< youtube id="GnOHrG_nVvY" >}}
 
 *~14-minute chaptered walkthrough. Jump to a chapter using the YouTube chapter markers, or use the links below.*
@@ -23,246 +25,476 @@ showTableOfContents: true
 
 ---
 
-Charted Roots provides a complete genealogical toolkit within Obsidian. From basic family tree visualization to advanced evidence tracking and world-building tools, every feature is designed to work seamlessly with your existing vault.
+## Canvas tree generation
+
+Generate family tree visualizations directly on Obsidian Canvas using layout algorithms tuned for genealogy data.
+
+- Automated genealogical layout with no overlapping nodes
+- Multiple tree types: ancestor, descendant, and full family trees with configurable generation limits
+- Layout algorithms: Standard, Compact (50% tighter spacing), Timeline (chronological), Hourglass (focused lineage)
+- Interactive preview with pan, zoom, and exploration before generation
+- Export to PNG, SVG, and PDF
+- Multi-family detection for disconnected family groups
+- Regenerate canvases with updated data via right-click context menu
+
+[Read more: Visual Trees →](https://github.com/banisterious/obsidian-charted-roots/wiki/Visual-Trees)
 
 ---
 
-## Canvas Tree Generation
+## Workspace views
 
-Generate beautiful family tree visualizations directly on Obsidian Canvas.
+Dockable views that live alongside your notes in the Obsidian [workspace](https://obsidian.md/help/workspace). Each one is a tab you can pin, split, or move to a sidebar like any other Obsidian view.
 
-- **Automated genealogical layout** using specialized algorithms with no overlapping nodes
-- **Multiple tree types**: Ancestor trees, descendant trees, and full family trees with configurable generation limits
-- **Layout algorithms**: Standard, Compact (50% tighter spacing), Timeline (chronological), Hourglass (focused lineage)
-- **Interactive preview** with pan, zoom, and exploration before generation
-- **Export options**: PNG, SVG, and PDF formats
-- **Multi-family detection** for disconnected family groups
-- **Regenerate canvases** with updated data via right-click context menu
-
----
-
-## Interactive Family Chart View
+### Interactive Family Chart View
 
 A persistent visualization panel for real-time exploration and editing.
 
-- **Direct relationship editing** within the chart with full undo/redo support
-- **Bidirectional sync**: Chart edits update frontmatter; file changes refresh the chart
-- **Multiple color schemes**: Gender-based, Generation-based, Collection-based, or Monochrome
-- **High-quality export** to PNG, SVG, PDF, or ODT with customizable filenames
+- Click a card to open a Person Details panel with inline field editing
+- Bidirectional sync: chart edits update frontmatter, file changes refresh the chart
+- Card styles: rectangle with avatars, circle, compact
+- Multiple color schemes: gender, generation, collection, monochrome
+- Split name mode (given / surname on separate lines)
+- Kinship labels showing genealogical relationships relative to the rooted person
+- **Highlight Groups**: spotlight patterns on the tree by dimming cards that don't match a filter and glowing cards that do (e.g., bloodline vs. married-in vs. foster)
+- **Custom Relationships Overlay**: render non-family connections (mentor, rival, sire, liege) as styled overlay lines on top of the biological tree, with per-type toggles
+- High-quality export to PNG, SVG, PDF, or ODT with customizable filenames
 
----
+[Read more: Family Chart View →](https://github.com/banisterious/obsidian-charted-roots/wiki/Family-Chart-View)
 
-## Import & Export
+### Geographic features
 
-Full multi-format support for genealogical data exchange.
+Interactive mapping powered by Leaflet.js, with support for both real-world coordinates and fictional worlds.
 
-### GEDCOM 5.5.1
-- Full round-trip import/export with UUID preservation
-- Validation and privacy protection
-- PEDI tag parsing for step/adoptive parents
+**Interactive Map View:**
 
-### GEDCOM X
-- JSON format with FamilySearch compatibility
-- Lineage type parsing
-
-### Gramps XML
-- Import/export for Gramps genealogy software
-- `.gpkg` package imports with bundled media extraction
-
-### CSV/TSV
-- Spreadsheet workflows with auto-detected column mapping
-
-### Excalidraw Export
-- Export canvases for manual annotation and hand-drawn styling
-
-### Privacy Features
-- Privacy-aware exports with optional anonymization of living persons
-- Full entity export for people, events, sources, places, and custom relationships
-
----
-
-## Geographic Features
-
-Interactive mapping powered by Leaflet.js.
-
-### Interactive Map View
 - Color-coded markers (green for birth, red for death)
 - Marker clustering for dense data
-- Migration path visualization
-- Heat maps and time-slider animation
+- Heat maps and time-slider animation across decades
 - Mini-map overview
+- Layer toggles for events, places, and child maps
 
-### Custom Image Maps
-- Support for fictional worlds with pixel or geographic coordinate systems
-- 4-step map creation wizard
+**Journey Mode:**
+
+- Isolate a single person's movements across their life as ordered waypoints
+- Animated step-through playback with prev / play / next controls and variable speed (0.25× to 2.5×)
+- Rich waypoint popups with event type, date, place, age at event, duration at location, and description
+- Family-journey overlay with color-coded paths for parents, spouses, and children
+
+**Custom Image Maps:**
+
+- Pixel or geographic coordinate systems for fictional worlds
+- 4-step map creation wizard with live preview
 - Draggable place markers with automatic persistence
-- Place marker context menu for editing and deletion
+- Linked-map drill-down navigation with breadcrumbs (parent-child map hierarchies)
+- Child map markers on parent maps, with on-map region editing (draggable rectangle that saves `parent_region_x/y/w/h` back to frontmatter)
 
-### Location Tools
+**Location Tools:**
+
 - Geocoding lookup via Nominatim (OpenStreetMap)
-- Place-based filtering for tree generation by birth/death/marriage locations
-- Migration visualizations with D3-based network and arc diagrams
+- Place-based filtering for tree generation by birth, death, or marriage location
+- Migration visualizations with D3 network and arc diagrams
+
+[Read more: Geographic Features →](https://github.com/banisterious/obsidian-charted-roots/wiki/Geographic-Features)
+
+### Calendar View
+
+A monthly calendar workspace view showing significant dates across the vault.
+
+- Color-coded event dots per day (blue for birth, red for death, yellow for marriage)
+- Text labels toggle showing person names inside day cells
+- Month dropdown and year input for instant navigation
+- Day click detail panel with events, person names, type, year, years-ago, and place
+- Imprecise dates section for entries with a month but no day
+- Filters by event type and by living / deceased status
+- Right-click a day to create an event pre-filled with that date
+- Keyboard navigation: arrow keys for month, T for today
+- State persistence across reloads (month, year, filters, label toggle)
+- Entry points from the command palette, Control Center dashboard tile, Events tab, and person / event context menus
+
+[Read more: Calendar View →](https://github.com/banisterious/obsidian-charted-roots/wiki/Calendar-View)
+
+### Entity Profile View
+
+A dockable profile panel that auto-syncs to the active note and displays related data for any entity type (Person, Place, Event, Source, Organization) in collapsible sections.
+
+- Auto-syncs with a 150ms debounce as you switch notes
+- Identity header with entity type badge, avatar, key metadata, and pin toggle
+- Collapsible sections per entity type: Relationships, Events, Sources, Media, Data Quality for persons; Events at location, Sources, Media, Map preview for places; Participants, Sources, Media for events; Referenced Facts, Media for sources; Members, Events, Sources, Media for organizations
+- Inline editing on all identity-header fields (text, number, select)
+- Pin / unpin to freeze on a specific entity; multiple instances for side-by-side comparison
+- Breadcrumb navigation for in-place entity traversal
+- State persistence across sessions (pinned entity, section states, breadcrumbs)
+- Lazy rendering and keyboard navigation on section headers (WAI-ARIA accordion)
+- Embedded Leaflet map preview for place profiles
+
+[Read more: Entity Profile View →](https://github.com/banisterious/obsidian-charted-roots/wiki/Entity-Profile-View)
+
+### Statistics Dashboard
+
+A dockable view surfacing vault-wide analytics. See [Statistics and reports](#statistics-and-reports) below for the full list of what the dashboard shows, how drill-downs work, and how the numbers feed into reports.
+
+[Read more: Statistics and Reports →](https://github.com/banisterious/obsidian-charted-roots/wiki/Statistics-And-Reports)
 
 ---
 
-## Data Management
+## Dynamic content blocks
 
-Robust tools to keep your genealogical data clean and consistent.
+Live-rendered blocks that show computed data inside entity notes when viewed in reading mode.
 
-### Bidirectional Sync
-- Automatic reciprocal relationship maintenance
-- Dual storage: Wikilinks (readability) + `cr_id` references (robust tracking)
+- **Timeline block**: chronologically ordered events for a person or family, with configurable layout modes (chronological, grouped by personal / family / context, personal-first) and customizable formatting
+- **Relationships block**: family connections as clickable links with optional family-events inclusion
+- **Media block**: photos and PDFs attached to the note, with first-page PDF thumbnail previews and image-crop regions for face thumbnails
+- **Sources block**: sources referenced by the entity, grouped with citation metadata and quality badges
+- **Transfers block**: transfer events (migration, relocation, emigration) with date and place
+- **Members block**: organization membership with roles and date ranges
+- **Universe-entity blocks**: tables of people, places, events, and organizations scoped to a universe, with sorting and limits
+- **Universe-map thumbnails**: clickable thumbnail grid for custom maps in a universe
+- **Research-specific blocks**: research timeline, negative findings, extractions
 
-### Duplicate Detection & Merging
-- Smart duplicate detection using fuzzy name matching and date proximity
-- Merge wizard with field-level conflict resolution
-- Automatic relationship reconciliation
+All blocks auto-refresh when vault data changes.
 
-### Staging Workflow
-- Dedicated Staging Manager with batch cards and file previews
-- Duplicate detection before promotion
+[Read more: Dynamic Note Content →](https://github.com/banisterious/obsidian-charted-roots/wiki/Dynamic-Note-Content)
 
-### Data Quality Tools
-- Quality scores with 15+ issue types
-- Batch normalization
-- 14-step post-import cleanup wizard covering dates, genders, relationships, places, sources, and property migrations
+---
+
+## Data entry and management
+
+Tools for creating, organizing, and maintaining the data in your vault.
 
 ### Family Creation Wizard
-- 5-step workflow for interconnected family groups
-- Automatic bidirectional linking
+
+- 5-step workflow for creating interconnected family groups (parents, children, marriage) in one pass
+- Automatic bidirectional linking across all members
+
+### Staging Workflow
+
+- Staging Manager for batch-promoting imported or clipped notes
+- Batch cards with file previews and per-entity actions
+- Duplicate detection before promotion
+
+### Bidirectional Sync
+
+- Automatic reciprocal relationship maintenance (add A → B, B → A written on save)
+- Dual storage: wikilinks for readability, `cr_id` references for tracking that survives note renames
+
+### Data Quality Tools
+
+- Quality scores across 15+ issue types
+- Smart duplicate detection using fuzzy name matching and date proximity
+- Merge wizard with field-level conflict resolution and automatic relationship reconciliation
+- Batch normalization for dates and other format issues
+- 14-step post-import cleanup wizard covering dates, genders, relationships, places, sources, and property migrations
 
 ### Schema Validation
+
 - User-defined schemas with required properties
 - Type validation and custom rules
+- Targeted schema validation: run validation against only the notes matching a specific schema, via right-click context menu
+
+### Collections
+
+- User-defined groupings across persons and places
+- Membership badges rendered contextually (e.g., "5 people, 3 places" for mixed collections)
+- Visible across Edit Person dropdowns, the Create Place modal, and the Control Center Collections tab
+- Collections can be defined from either entity side and surface consistently
+
+### Property and Value Aliases
+
+- Property aliases map custom property names to canonical Charted Roots properties (e.g., `born` vs. `birth` vs. `birthDate`)
+- Value aliases map custom values to canonical Charted Roots values (e.g., "male" / "m" / "M" all normalize)
+
+[Read more: Data Management →](https://github.com/banisterious/obsidian-charted-roots/wiki/Data-Management)
 
 ---
 
-## Evidence & Source Tracking
+## Relationships and lineage
 
-Professional genealogical research tools following the Genealogical Proof Standard.
-
-### Source Management
-- Structured genealogical metadata
-- Source quality classification: Primary, Secondary, or Derivative
-- Fact-level source tracking for specific life events
-
-### Research Tools
-- Proof summary notes for documenting reasoning chains
-- Research level property (0-6 scale based on GPS methodology)
-- Research gaps report with priority ranking
-- Source conflict detection and tracking
-
-### Media & Citations
-- Source media gallery with search, filtering, and lightbox viewer
-- Citation generator supporting Chicago, Evidence Explained, MLA, and Turabian formats
-- Canvas research indicators showing source counts, coverage %, and conflict warnings
-
----
-
-## Organization & Analysis
-
-Powerful tools for organizing and analyzing genealogical data.
-
-### Collections & Groups
-- Auto-detected family groups
-- User-defined collections
-
-### Reference Numbering
-- Ahnentafel, d'Aboville, Henry, and Generation systems
-
-### Lineage Tracking
-- Patrilineal, matrilineal, or all descendants
+Tools for computing, visualizing, and customizing how people connect.
 
 ### Relationship Calculator
-- Find connections with proper genealogical terms (e.g., "2nd cousin once removed")
+
+- Find connections between any two people using proper genealogical terminology (e.g., "2nd cousin once removed")
+- Multiple-relationship mode for people who are related through more than one path
 - Relationship history with timestamps and one-click undo
 
 ### Custom Relationships
-- Extended relationships beyond family: godparent, guardian, mentor, apprentice
-- Colored canvas edges for relationship types
 
-### Step & Adoptive Parents
-- Dedicated fields with distinct line styles on canvas trees
+- Extensible relationship types beyond family (godparent, guardian, mentor, apprentice, sire, rival, nemesis)
+- Symmetric inverse handling (A is mentor of B; B is protégé of A)
+- Colored canvas edges and family-chart overlay rendering per type
+
+### Step and Adoptive Parents
+
+- Dedicated fields with distinct line styles on canvas trees (dashed for adoptive, dotted for step)
+- Adoptive siblings render in the relationships dynamic block
+- Step-parent relationships persist round-trip through the Edit Person modal
+
+### Lineage Tracking
+
+- Patrilineal, matrilineal, or all-descendants lineage assignment
+- Bulk assign / clear via command palette
+
+### Reference Numbering
+
+- Four numbering systems: Ahnentafel, d'Aboville, Henry, and Generation
+- Applied in reports and optionally as frontmatter properties
+
+### Inheritance and Succession
+
+- `inherited_from` and `successor` properties for tracking title, estate, and office succession across generations
+
+[Read more: Relationship Tools →](https://github.com/banisterious/obsidian-charted-roots/wiki/Relationship-Tools)
+
+---
+
+## Evidence and sources
+
+Structured tools for Genealogical Proof Standard research and evidence-based claims. Sources are first-class notes with their own entity type, classification, hierarchy, and citation metadata.
+
+### Source Management
+
+- Source notes as first-class entities with structured genealogical metadata
+- Fact-level source attribution via `sourced_*` properties on person / place / event notes
+- **Mills-aligned classification** (from *Evidence Explained*) with three optional axes:
+  - Source type: original, derivative, authored narrative
+  - Information type: primary, secondary, undetermined
+  - Evidence type: direct, indirect, negative
+
+### Source Hierarchies
+
+- `source_parent` and `source_parent_id` properties for modeling multi-document record groups
+- Examples: probate packets with multiple documents, census pages in a schedule, multi-volume works
+- Profile view sections for parent source, child documents, related documents, and a collapsible source tree
+- Filter the Sources tab by "has parent," "no parent," or children of a specific source
+
+### Citations
+
+- Citation as a first-class entity with page references (`citation_page`) and quality assessments (`citation_quality`)
+- Full GEDCOM roundtrip (PAGE / QUAY sub-tags)
+- Bidirectional sync between citation notes and `sourced_*` fields on entities
+- Citation generator supporting Chicago, *Evidence Explained*, MLA, and Turabian formats
+- Citation notes section in Entity Profile View grouped by source with fact labels, page references, and color-coded quality badges
+
+### Research workflow
+
+GPS-aligned research entity types for multi-phase research cases:
+
+- `research_project`: hub for a research case
+- `research_report`: living document analyzing a specific research question
+- `individual_research_note` (IRN): synthesis between reports and person notes
+- `research_journal`: daily or session tracking across projects
+- `research_log_entry`: individual log entries as queryable notes
+
+Supporting tools:
+
+- Project statuses: open, in-progress, on-hold, completed
+- Report statuses: draft, review, final, published
+- Proof summary notes for documenting reasoning chains
+- Research level property (0–6 scale based on GPS methodology)
+- Research gaps report with priority ranking
+- Source conflict detection and tracking
+- Canvas research indicators showing source counts, coverage percentage, and conflict warnings
+
+### Web Clipper integration
+
+Purpose-built Obsidian Web Clipper templates for the genealogical web. Clipped pages land as source notes with citation metadata already populated.
+
+- **Find a Grave Person**: CSS and AI-assisted variants for memorial pages
+- **FamilySearch Source**: CSS and AI-assisted variants for indexed records and browse-only collections
+- **Wikipedia Biography**: AI-assisted variant for structured biographical extraction
+- **Wikidata Place**: AI-assisted variant for place entities with coordinates
+- Works with the standard Obsidian Web Clipper plugin (no custom browser extension)
+
+### Person Roles in Sources
+
+- `person_roles` on source notes for first-class informant / enumerator / clerk / author modeling
+- Reverse-linked to person notes for "Sources where this person is listed as an informant" queries
+
+### Media and Citations
+
+- Source media gallery with search, filtering, and lightbox viewer
+- Historical context overlay and age annotations on timelines
+- Customizable timeline display templates with `{year}`, `{title}`, `{place}`, `{age}` placeholders
+
+[Read more: Evidence and Sources →](https://github.com/banisterious/obsidian-charted-roots/wiki/Evidence-And-Sources)
+
+---
+
+## DNA tracking
+
+Opt-in support for genetic genealogists, off by default. When enabled, person notes can be flagged as a DNA Match and tracked with genetic-specific metadata.
+
+- Master toggle in Settings → Advanced → DNA tracking
+- DNA Match person type selectable during creation
+- Tracked properties: shared cM, testing company, kit ID, match type, endogamy flag, notes
+- Match types: BKM (Best Known Match), BMM (Best Mystery Match), confirmed, unconfirmed
+- `dna_match` relationship type with automatic bidirectional linking (A → B creates B → A)
+- DNA badge in the person picker showing a flask icon and shared cM value
+
+Scope is intentionally narrow: track key matches rather than full chromosome analysis. Specialized tools like DNAPainter or Genetic Affairs handle chromosome-level work better, and Charted Roots is designed to live alongside them.
 
 ---
 
 ## World Building
 
-Tools designed for fiction writers and world-builders.
-
-### Fictional Date Systems
-- Custom calendars and eras
-- Built-in support for Middle-earth, Westeros, Star Wars, or custom systems
-- Calendarium integration
+Tools designed for worldbuilders, novelists, and RPG creators who document fictional universes alongside (or instead of) real genealogy.
 
 ### Universe Notes
-- First-class entities for organizing fictional worlds
+
+- First-class entity type for organizing a fictional world
 - Metadata, linked calendars, maps, and validation schemas
+- Auto-generated dynamic content blocks for every entity scoped to the universe:
+  - `charted-roots-universe-people`: tables of characters
+  - `charted-roots-universe-places`: tables of locations with place types
+  - `charted-roots-universe-events`: tables of events with type badges
+  - `charted-roots-universe-organizations`: tables of guilds, houses, factions
+  - `charted-roots-universe-maps`: clickable thumbnail grid for custom maps
 
-### Organization Notes
-- Track non-genealogical hierarchies
-- Noble houses, guilds, corporations, military units, religious orders
+### Fictional Date Systems
 
-### Events & Timelines
-- Document life events with person/family/place timelines
-- Visual exports with group/faction filtering
+- Custom calendars and era systems defined in settings
+- Built-in support for Middle-earth (TA / SA), Westeros, and Star Wars (BBY / ABY)
+- Calendarium integration for calendars defined in the Calendarium plugin
+- Date parsing and display respects the active universe's calendar
+
+### Custom Image Maps
+
+See [Geographic features](#geographic-features) above. Maps support pixel-coordinate systems ideal for fictional worlds, linked-map drill-down for multi-scale worldbuilding, and child-map region editing.
+
+### Organizations
+
+Track non-genealogical hierarchies like noble houses, guilds, corporations, military units, and religious orders. Works for fictional settings and for real-world genealogy (fraternal orders, employers, religious communities).
+
+- Organization notes as a first-class entity type
+- Member management with roles and date ranges
+- Structured role lists: define valid roles and their display order per organization
+- Role picker autocomplete in membership modals
+- Members dynamic block on organization notes with three-level role ordering fallback
+- Organization membership statistics in the Statistics Dashboard
+
+[Read more: Universe Notes →](https://github.com/banisterious/obsidian-charted-roots/wiki/Universe-Notes)
 
 ---
 
-## Statistics & Reports
+## Import and export
 
-Comprehensive analytics and report generation.
+Full multi-format support for genealogical data exchange.
+
+### GEDCOM 5.5.1
+
+Comprehensive round-trip import and export with UUID preservation.
+
+- Name components: NPFX (prefix), NSFX (suffix), SPFX (surname prefix), NICK (nickname)
+- Person attributes: TITL (title), RELI (religion), NATI (nationality), DSCR (description), IDNO (ID number), PROP (property), CAST (caste), NCHI (number of children), NMR (number of marriages), SSN
+- Burial: date and place imported to person frontmatter
+- Death cause: imported to `death_cause`
+- Age at event: AGE sub-tag stored on event notes and re-exported
+- Date ranges: both BET / AND and FROM / TO parsed and exported
+- Family events (MARR, DIV, MARB, MARC, MARL, MARS, DIVF) exported on FAM records
+- Citation metadata: PAGE and QUAY sub-tags preserve citation details across roundtrip
+- PEDI tag parsing for step and adoptive parents
+- Validation and privacy protection on export
+
+### GEDCOM X
+
+- JSON format with FamilySearch compatibility
+- Lineage type parsing
+
+### Gramps XML
+
+- Import and export for Gramps genealogy software
+- `.gpkg` package imports with bundled media extraction
+
+### CSV and TSV
+
+- Spreadsheet workflows with auto-detected column mapping
+
+### Excalidraw Export
+
+- Export canvases for manual annotation or hand-drawn styling
+
+### Privacy
+
+- Privacy-aware exports with optional anonymization of living persons
+- Full entity export for people, events, sources, places, and custom relationships
+
+[Read more: Import / Export →](https://github.com/banisterious/obsidian-charted-roots/wiki/Import-Export)
+
+---
+
+## Statistics and reports
+
+Analytics, compiled reports, and the book builder for sharing research.
 
 ### Statistics Dashboard
-- Vault statistics and entity counts
-- Completeness metrics
+
+The dashboard (a dockable workspace view) surfaces vault-wide metrics and analytics.
+
+- Entity counts and completeness metrics
 - Gender distribution and date ranges
+- Top Lists: surnames, locations, occupations, sources (each with drill-down)
+- Longevity analysis, family size patterns, marriage patterns, migration flows, timeline density
+- Citation statistics: coverage percentage, quality distribution, most cited sources
+- Research statistics: entity counts and status breakdowns across projects, reports, IRNs, journals, and log entries
+- Organization membership statistics
 
 ### Data Quality Analysis
-- Severity-coded alerts
+
+- Severity-coded alerts across issue types
 - Drill-down lists for issue resolution
 
-### Top Lists
-- Surnames, locations, occupations, sources
-- Drill-down functionality
-
-### Extended Statistics
-- Longevity analysis
-- Family size patterns
-- Marriage patterns
-- Migration flows
-- Timeline density
-
 ### Report Types (17+)
-Export as PDF or ODT:
+
+Export as PDF, ODT, or Markdown:
 
 - Pedigree charts
 - Descendant charts
 - Hourglass charts
 - Fan charts
-- Family group sheets
+- Family group sheets (with marriage data)
 - Individual summaries
 - Ahnentafel reports
 - Gaps reports
 - Register reports
-- Source summaries
+- Source summaries (with citation page columns)
+- Sources by role
 - Timeline reports
 - Place summaries
 - Media inventories
 - Universe overviews
 - Collection overviews
+- Research reports
+
+### Book Builder
+
+A book builder that compiles multiple reports, visual trees, and user-written vault notes into a single sequenced document.
+
+- Chapter types: generated reports, visual trees, vault notes, section dividers
+- Preset templates: Family history book, Research compilation, Blank
+- 4-step wizard for metadata, chapter selection with drag-and-drop ordering, output configuration, and progress-tracked generation
+- Saveable book definitions as `.book.json` files for re-generation as underlying data changes
+- Consolidated bibliography deduplicating footnotes across chapters
+- Auto-generated name index sorted by last name with alphabetical grouping
+- Chapter numbering (numeric or Roman numeral)
+- Output as PDF or ODT
+
+[Read more: Statistics and Reports →](https://github.com/banisterious/obsidian-charted-roots/wiki/Statistics-And-Reports)
 
 ---
 
-## Integration & Compatibility
+## Integration and compatibility
 
-Designed to work with the Obsidian ecosystem.
+Designed to work with the Obsidian ecosystem and adjacent tools.
 
-- **Calendarium integration** for fictional date systems
-- **Type customization** with full type managers
-- **Property aliases** to map custom property names
-- **Value aliases** for mapping custom property values
-- **Obsidian Bases integration** with ready-to-use templates
-- **Style Settings plugin support** for color customization
-- **Context menu actions** for right-click operations
-- **YAML-first data** compatible with Dataview, Bases, and other tools
+- **Obsidian Web Clipper plugin**: purpose-built templates for genealogical sources (see [Evidence and sources](#evidence-and-sources))
+- **Calendarium plugin**: fictional date systems defined in Calendarium are read and usable in Charted Roots
+- **Obsidian Bases**: ready-to-use Base templates for persons, places, events, sources, and universes
+- **Style Settings plugin**: color customization via the standard Style Settings surface
+- **Templater**: integration for template-driven note creation
+- **Type customization**: full type managers for person types, event types, and organization types
+- **Property aliases**: map custom property names (`born` to `birth` to `birthDate`)
+- **Value aliases**: map custom property values
+- **Context menu actions**: right-click operations across file explorer, canvas, and reading view
+- **YAML-first data**: compatible with Dataview, Bases, and any plugin that reads Obsidian frontmatter
+
+[Read more: Bases Integration →](https://github.com/banisterious/obsidian-charted-roots/wiki/Bases-Integration)
