@@ -4,6 +4,25 @@ description: "Comprehensive feature overview of the Charted Roots plugin for Obs
 showTableOfContents: true
 ---
 
+{{< youtube id="GnOHrG_nVvY" >}}
+
+*~14-minute chaptered walkthrough. Jump to a chapter using the YouTube chapter markers, or use the links below.*
+
+- [Importing Data (0:10)](https://www.youtube.com/watch?v=GnOHrG_nVvY&t=10s)
+- [Person Notes & Dynamic Blocks (1:11)](https://www.youtube.com/watch?v=GnOHrG_nVvY&t=71s)
+- [Interactive Family Chart (1:45)](https://www.youtube.com/watch?v=GnOHrG_nVvY&t=105s)
+- [Maps & Journey Mode (3:35)](https://www.youtube.com/watch?v=GnOHrG_nVvY&t=215s)
+- [Calendar View (4:49)](https://www.youtube.com/watch?v=GnOHrG_nVvY&t=289s)
+- [Creating a Family (5:55)](https://www.youtube.com/watch?v=GnOHrG_nVvY&t=355s)
+- [Evidence & Sources (6:47)](https://www.youtube.com/watch?v=GnOHrG_nVvY&t=407s)
+- [Reports & Book Builder (7:43)](https://www.youtube.com/watch?v=GnOHrG_nVvY&t=463s)
+- [Statistics Dashboard (8:43)](https://www.youtube.com/watch?v=GnOHrG_nVvY&t=523s)
+- [Place Lookup (9:20)](https://www.youtube.com/watch?v=GnOHrG_nVvY&t=560s)
+- [Bases Integration (10:06)](https://www.youtube.com/watch?v=GnOHrG_nVvY&t=606s)
+- [World-Building (10:52)](https://www.youtube.com/watch?v=GnOHrG_nVvY&t=652s)
+
+---
+
 Charted Roots provides a complete genealogical toolkit within Obsidian. From basic family tree visualization to advanced evidence tracking and world-building tools, every feature is designed to work seamlessly with your existing vault.
 
 ---

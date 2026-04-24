@@ -1,0 +1,15 @@
+{{- $id := .Get "id" -}}
+{{- $title := .Get "title" | default "YouTube video" -}}
+{{- $start := .Get "start" -}}
+{{- $src := printf "https://www.youtube.com/embed/%s" $id -}}
+{{- if $start -}}
+  {{- $src = printf "%s?start=%s" $src $start -}}
+{{- end -}}
+<iframe
+  src="{{ $src }}"
+  title="{{ $title }}"
+  loading="lazy"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen
+  style="aspect-ratio: 16 / 9; width: 100%; height: auto; border: 0; display: block; margin: 1.5rem 0;"></iframe>

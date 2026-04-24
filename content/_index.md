@@ -27,6 +27,16 @@ Custom calendars, fictional date systems, and universe management for creative p
 
 ---
 
+## See it in action
+
+A two-minute overview of the core workflow: import a GEDCOM, generate a family tree, explore the chart, and open the map view.
+
+{{< youtube id="elQfn1fk1VQ" >}}
+
+Longer feature tour (~14 minutes, chaptered) on the [features page](/features/).
+
+---
+
 ## Key Features
 
 ### Canvas Tree Generation
