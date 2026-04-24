@@ -11,15 +11,20 @@ enableEmoji = true
   noJSConfigInAssets = true
 
 [params]
-  # Site settings
-  colorScheme = "ocean"
-  defaultAppearance = "dark"
-  autoSwitchAppearance = true
+  # Site description — shown as the hero tagline and meta description
+  description = "Genealogical family tree plugin for Obsidian"
 
-  # Homepage layout
+  # Site appearance
+  colorScheme = "charted-roots"
+  defaultAppearance = "light"
+  autoSwitchAppearance = false
+
+  # Homepage
   homepage.layout = "custom"
-  homepage.homepageImage = "img/hero.png"
   homepage.showRecent = false
+
+  # Social / OG
+  defaultSocialImage = "img/social-card.png"
 
   # Article settings
   article.showAuthor = false
@@ -38,12 +43,12 @@ enableEmoji = true
   enableCodeCopy = true
 
   # Logo and branding
-  logo = "img/logo.png"
+  logo = "img/logo.svg"
 
   # Footer
   footer.showCopyright = true
   footer.showThemeAttribution = false
-  footer.showAppearanceSwitcher = true
+  footer.showAppearanceSwitcher = false
   footer.showScrollToTop = true
 
 [params.author]

@@ -3,26 +3,6 @@ title: "Charted Roots"
 description: "Professional genealogy and family tree visualization for Obsidian"
 ---
 
-<div class="hero-section">
-
-# Charted Roots
-
-### Professional Genealogy for Obsidian
-
-Import, organize, visualize, and share family histories without leaving your Obsidian vault.
-
-{{< button href="https://github.com/banisterious/obsidian-charted-roots" target="_blank" >}}
-View on GitHub
-{{< /button >}}
-
-{{< button href="/docs/getting-started/" >}}
-Get Started
-{{< /button >}}
-
-</div>
-
----
-
 ## Why Charted Roots?
 
 Charted Roots is a **professional-grade genealogical tool** designed for genealogists, historians, writers, and world-builders. Whether you're documenting your family history or building fictional worlds, Charted Roots provides the tools you need.

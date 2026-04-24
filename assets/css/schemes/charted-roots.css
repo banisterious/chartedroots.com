@@ -1,0 +1,41 @@
+/* Charted Roots scheme — oxblood / navy / warm cream
+   Light-only. autoSwitchAppearance should be false. */
+:root {
+  --color-neutral: 244, 235, 213;
+
+  /* Warm cream → dark warm brown (ground → ink) */
+  --color-neutral-50:  244, 235, 213; /* cream               #F4EBD5 */
+  --color-neutral-100: 232, 219, 184; /* cream-darker        #E8DBB8 */
+  --color-neutral-200: 217, 202, 159; /* cream-darkest       #D9CA9F */
+  --color-neutral-300: 190, 170, 125;
+  --color-neutral-400: 150, 130,  90;
+  --color-neutral-500: 115,  95,  65;
+  --color-neutral-600:  85,  70,  45;
+  --color-neutral-700:  60,  50,  32;
+  --color-neutral-800:  45,  35,  22;
+  --color-neutral-900:  30,  25,  15;
+
+  /* Oxblood ramp (primary ink, links, buttons) — anchored at 600 = #6B1F1F */
+  --color-primary-50:  245, 230, 225;
+  --color-primary-100: 235, 210, 200;
+  --color-primary-200: 215, 175, 165;
+  --color-primary-300: 195, 140, 125;
+  --color-primary-400: 160,  95,  85;
+  --color-primary-500: 138,  41,  41;
+  --color-primary-600: 107,  31,  31;
+  --color-primary-700:  90,  24,  24;
+  --color-primary-800:  73,  18,  18;
+  --color-primary-900:  55,  12,  12;
+
+  /* Navy ramp (alternate ink, secondary accents) — anchored at 600 = #1E2B45 */
+  --color-secondary-50:  235, 240, 250;
+  --color-secondary-100: 215, 225, 240;
+  --color-secondary-200: 180, 195, 220;
+  --color-secondary-300: 145, 165, 195;
+  --color-secondary-400:  95, 120, 165;
+  --color-secondary-500:  50,  80, 125;
+  --color-secondary-600:  30,  43,  69;
+  --color-secondary-700:  22,  32,  55;
+  --color-secondary-800:  15,  22,  40;
+  --color-secondary-900:   8,  12,  25;
+}
