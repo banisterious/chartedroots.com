@@ -61,13 +61,25 @@ enableEmoji = true
     pageRef = "features"
     weight = 10
   [[menu.main]]
+    name = "Research"
+    pageRef = "research"
+    weight = 15
+  [[menu.main]]
+    name = "Worldbuilding"
+    pageRef = "worldbuilding"
+    weight = 20
+  [[menu.main]]
     name = "Documentation"
     url = "https://github.com/banisterious/obsidian-charted-roots/wiki"
-    weight = 20
+    weight = 25
   [[menu.main]]
     name = "Changelog"
     pageRef = "changelog"
     weight = 30
+  [[menu.main]]
+    name = "FAQ"
+    pageRef = "faq"
+    weight = 35
   [[menu.main]]
     name = "GitHub"
     url = "https://github.com/banisterious/obsidian-charted-roots"
