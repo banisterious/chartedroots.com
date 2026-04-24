@@ -1,4 +1,4 @@
-# Monthly link check: builds the site and verifies every link in the output,
+# Weekly link check: builds the site and verifies every link in the output,
 # including anchor fragments. Opens a GitHub issue if any link fails.
 name: Link check
 
@@ -44,6 +44,7 @@ jobs:
             --no-progress
             --include-fragments
             --max-concurrency 4
+            --root-dir ${{ github.workspace }}/public
             './public/**/*.html'
           fail: true
           output: ./lychee/out.md
