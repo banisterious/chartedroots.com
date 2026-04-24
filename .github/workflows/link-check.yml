@@ -35,6 +35,25 @@ jobs:
           TZ: America/New_York
         run: hugo --gc --minify
 
+      # Serve the built site locally so directory URLs like /features/
+      # resolve to /features/index.html the same way they do in production.
+      # Lychee's local-file mode doesn't do directory-index lookup on its
+      # own, so we give it a real HTTP server to talk to.
+      - name: Serve built site for link check
+        run: |
+          cd public
+          nohup python3 -m http.server 8080 > /tmp/http.log 2>&1 &
+          for i in $(seq 1 10); do
+            if curl -sf http://localhost:8080/ > /dev/null; then
+              echo "Server ready"
+              exit 0
+            fi
+            sleep 1
+          done
+          echo "Server failed to start" >&2
+          cat /tmp/http.log
+          exit 1
+
       - name: Link check with lychee
         id: lychee
         uses: lycheeverse/lychee-action@v2
@@ -44,7 +63,7 @@ jobs:
             --no-progress
             --include-fragments
             --max-concurrency 4
-            --root-dir ${{ github.workspace }}/public
+            --base http://localhost:8080
             './public/**/*.html'
           fail: true
           output: ./lychee/out.md
