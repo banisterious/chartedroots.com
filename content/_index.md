@@ -1,6 +1,6 @@
 ---
 title: "Charted Roots"
-description: "Professional genealogy and family tree visualization for Obsidian"
+description: "Obsidian plugin for genealogy and worldbuilding. Family trees, maps, evidence tracking, fictional universes, and 17+ reports on plain-text markdown notes."
 ---
 
 ## Why Charted Roots?

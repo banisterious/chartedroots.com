@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-description: "Version history and release notes for Charted Roots"
+description: "Version history and release spotlights for Charted Roots, with curated highlights from each release cluster."
 ---
 
 For the full per-release log, see [GitHub Releases](https://github.com/banisterious/obsidian-charted-roots/releases). This page groups headline changes by release cluster.

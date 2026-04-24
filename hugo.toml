@@ -12,7 +12,7 @@ enableEmoji = true
 
 [params]
   # Site description — shown as the hero tagline and meta description
-  description = "Genealogical family tree plugin for Obsidian"
+  description = "Obsidian plugin for genealogy and worldbuilding: family tree visualization, evidence tracking, fictional universes, and reports."
 
   # Site appearance
   colorScheme = "charted-roots"

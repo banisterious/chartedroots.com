@@ -1,6 +1,6 @@
 ---
 title: "Features"
-description: "Comprehensive feature overview of the Charted Roots plugin for Obsidian"
+description: "Canvas family trees, interactive charts, maps, evidence tracking, fictional universes, and 17+ report types. Charted Roots feature overview."
 showTableOfContents: true
 ---
 
