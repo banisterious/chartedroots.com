@@ -13,7 +13,7 @@ The official website for [Charted Roots](https://github.com/banisterious/obsidia
 
 ### Prerequisites
 
-- Hugo Extended v0.140.0 or later
+- Hugo Extended v0.158.0 or later
 
 ### Running Locally
 
