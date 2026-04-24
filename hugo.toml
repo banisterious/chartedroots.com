@@ -10,6 +10,11 @@ enableEmoji = true
 [build]
   noJSConfigInAssets = true
 
+# HTML minifier — preserve attribute quotes so strict third-party
+# validators (Bing Webmaster Tools, etc.) can parse our meta tags.
+[minify.tdewolff.html]
+  keepQuotes = true
+
 [params]
   # Site description — shown as the hero tagline and meta description
   description = "Obsidian plugin for genealogy and worldbuilding: family tree visualization, evidence tracking, fictional universes, and reports."
