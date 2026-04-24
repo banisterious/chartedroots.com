@@ -26,6 +26,9 @@ enableEmoji = true
   # Social / OG
   defaultSocialImage = "img/social-card.png"
 
+  # Search engine verification
+  verification.bing = "15A5E97E3BFB0A25CC0ABBA0696C34E0"
+
   # Article settings
   article.showAuthor = false
   article.showDate = true
