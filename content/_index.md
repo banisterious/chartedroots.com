@@ -7,22 +7,22 @@ description: "Obsidian plugin for genealogy and worldbuilding. Family trees, map
 
 Charted Roots is a **professional-grade genealogical tool** designed for genealogists, historians, writers, and world-builders. Whether you're documenting your family history or building fictional worlds, Charted Roots provides the tools you need.
 
-### Canvas Tree Generation
+### [Canvas Tree Generation](/features/#canvas-tree-generation)
 Create beautiful, automated family tree visualizations with multiple layout algorithms.
 
-### Interactive Maps
+### [Interactive Maps](/features/#geographic-features)
 Visualize geographic data with migration paths, heat maps, and custom image maps for fictional worlds.
 
-### GEDCOM & Gramps Support
+### [GEDCOM & Gramps Support](/features/#import-and-export)
 Full import/export support for GEDCOM 5.5.1, GEDCOM X, Gramps XML, and CSV formats.
 
-### Statistics & Reports
+### [Statistics & Reports](/features/#statistics-and-reports)
 Generate 17+ report types including pedigree charts, family group sheets, and source summaries.
 
-### Evidence Tracking
+### [Evidence Tracking](/research/)
 Track sources with quality classification following the Genealogical Proof Standard.
 
-### World Building
+### [World Building](/worldbuilding/)
 Custom calendars, fictional date systems, and universe management for creative projects.
 
 ---
