@@ -35,24 +35,35 @@ jobs:
           TZ: America/New_York
         run: hugo --gc --minify
 
-      # Serve the built site locally so directory URLs like /features/
-      # resolve to /features/index.html the same way they do in production.
-      # Lychee's local-file mode doesn't do directory-index lookup on its
-      # own, so we give it a real HTTP server to talk to.
-      - name: Serve built site for link check
+      # Serve the built site locally and hand lychee the list of page URLs
+      # to fetch (not filesystem globs). Reasons:
+      #   * Directory URLs like /features/ need the server to resolve to
+      #     /features/index.html, the same way GitHub Pages does.
+      #   * Lychee's local-file mode misresolves same-document fragments:
+      #     `<a href="#foo">` in changelog/index.html gets checked against
+      #     the --base root rather than the containing page, producing
+      #     100+ false positives. Fetching each page over HTTP gives
+      #     lychee the correct source URL for fragment resolution.
+      - name: Serve built site and enumerate URLs
+        id: urls
         run: |
           cd public
           nohup python3 -m http.server 8080 > /tmp/http.log 2>&1 &
           for i in $(seq 1 10); do
             if curl -sf http://localhost:8080/ > /dev/null; then
               echo "Server ready"
-              exit 0
+              break
             fi
             sleep 1
           done
-          echo "Server failed to start" >&2
-          cat /tmp/http.log
-          exit 1
+          cd ..
+          URLS=$(find public -name "*.html" \
+            | sed 's|^public/|http://localhost:8080/|; s|index\.html$||' \
+            | sort -u \
+            | tr '\n' ' ')
+          echo "URLS=$URLS" >> "$GITHUB_ENV"
+          echo "Enumerated URLs:"
+          echo "$URLS" | tr ' ' '\n'
 
       - name: Link check with lychee
         id: lychee
@@ -63,8 +74,7 @@ jobs:
             --no-progress
             --include-fragments
             --max-concurrency 4
-            --base http://localhost:8080
-            './public/**/*.html'
+            ${{ env.URLS }}
           fail: true
           output: ./lychee/out.md
 
