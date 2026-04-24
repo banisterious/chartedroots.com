@@ -104,3 +104,7 @@ Gramps XML covers most of the same ground, with added support for `.gpkg` packag
 Privacy-aware export anonymizes living persons automatically when enabled. Names, precise dates, and identifying details are stripped; relationships and structural data remain. Anonymization is per-entity-type and opt-in, so you can share a research compilation for review without compromising the subjects' privacy.
 
 [Read more: Import and Export →](https://github.com/banisterious/obsidian-charted-roots/wiki/Import-Export)
+
+---
+
+For in-universe citations and fictional sourcing, see the [Worldbuilding track](/worldbuilding/).
