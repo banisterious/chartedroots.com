@@ -37,6 +37,8 @@ Generate family tree visualizations directly on Obsidian Canvas using layout alg
 - Multi-family detection for disconnected family groups
 - Regenerate canvases with updated data via right-click context menu
 
+<video autoplay muted loop playsinline preload="metadata" src="/img/cr-canvas-tree-generation.webm" aria-label="Generating a family tree on Obsidian Canvas: select root, click Generate, layout animates"></video>
+
 [Read more: Visual Trees →](https://github.com/banisterious/obsidian-charted-roots/wiki/Visual-Trees)
 
 ---
@@ -59,6 +61,8 @@ A persistent visualization panel for real-time exploration and editing.
 - **Custom Relationships Overlay**: render non-family connections (mentor, rival, sire, liege) as styled overlay lines on top of the biological tree, with per-type toggles
 - High-quality export to PNG, SVG, PDF, or ODT with customizable filenames
 
+<video autoplay muted loop playsinline preload="metadata" src="/img/cr-family-chart-relationship-edit.webm" aria-label="Editing a relationship on the Family Chart View, with the chart updating in real time"></video>
+
 [Read more: Family Chart View →](https://github.com/banisterious/obsidian-charted-roots/wiki/Family-Chart-View)
 
 ### Geographic features
@@ -73,12 +77,16 @@ Interactive mapping powered by Leaflet.js, with support for both real-world coor
 - Mini-map overview
 - Layer toggles for events, places, and child maps
 
+<video autoplay muted loop playsinline preload="metadata" src="/img/cr-interactive-map-time.webm" aria-label="Scrubbing the time-slider across decades on the interactive map, with markers appearing and disappearing"></video>
+
 **Journey Mode:**
 
 - Isolate a single person's movements across their life as ordered waypoints
 - Animated step-through playback with prev / play / next controls and variable speed (0.25× to 2.5×)
 - Rich waypoint popups with event type, date, place, age at event, duration at location, and description
 - Family-journey overlay with color-coded paths for parents, spouses, and children
+
+<video autoplay muted loop playsinline preload="metadata" src="/img/cr-interactive-map-journey.webm" aria-label="Stepping through a person's life journey on the map, with waypoints animating in chronological order"></video>
 
 **Custom Image Maps:**
 
@@ -184,6 +192,8 @@ Tools for creating, organizing, and maintaining the data in your vault.
 - Merge wizard with field-level conflict resolution and automatic relationship reconciliation
 - Batch normalization for dates and other format issues
 - 14-step post-import cleanup wizard covering dates, genders, relationships, places, sources, and property migrations
+
+<video autoplay muted loop playsinline preload="metadata" src="/img/cr-merge-wizard-conflict-res.webm" aria-label="Resolving field conflicts in the duplicate-merge wizard"></video>
 
 ### Schema Validation
 
