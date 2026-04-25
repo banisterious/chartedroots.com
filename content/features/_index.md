@@ -315,6 +315,8 @@ Purpose-built Obsidian Web Clipper templates for the genealogical web. Clipped p
 - **Wikidata Place**: AI-assisted variant for place entities with coordinates
 - Works with the standard Obsidian Web Clipper plugin (no custom browser extension)
 
+<video autoplay muted loop playsinline preload="metadata" src="/img/cr-web-clipper-to-bio.webm" aria-label="Clipping a Wikipedia biography page with the Web Clipper extension; the resulting source note appears in the Obsidian Staging folder"></video>
+
 ### Person Roles in Sources
 
 - `person_roles` on source notes for first-class informant / enumerator / clerk / author modeling
