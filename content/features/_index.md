@@ -63,6 +63,8 @@ A persistent visualization panel for real-time exploration and editing.
 
 <video autoplay muted loop playsinline preload="metadata" src="/img/cr-family-chart-relationship-edit.webm" aria-label="Editing a relationship on the Family Chart View, with the chart updating in real time"></video>
 
+<video autoplay muted loop playsinline preload="metadata" src="/img/cr-family-chart-highlight-groups.webm" aria-label="Adding highlight groups on the Family Chart View; matching cards light up in colored outlines while non-matching cards dim, revealing categories of people across the tree"></video>
+
 [Read more: Family Chart View →](https://github.com/banisterious/obsidian-charted-roots/wiki/Family-Chart-View)
 
 ### Geographic features
