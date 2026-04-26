@@ -62,6 +62,29 @@ Generate family tree visualizations directly on Obsidian Canvas using layout alg
   </figure>
 </div>
 
+*Color schemes layer on top of layouts. Any layout above pairs with any scheme below.*
+
+<div class="cr-grid-2">
+  <figure>
+    <img src="/img/cr-canvas-tree-color-sex.png" alt="Canvas tree of the Anderson family with default Sex coloring — male cards in one color, female cards in another.">
+    <figcaption>Sex</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/cr-canvas-tree-color-generation.png" alt="Same Anderson tree with Generation coloring — color bands shift per generation level, visually distinguishing each tier of the family.">
+    <figcaption>Generation</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/cr-canvas-tree-color-collection.png" alt="Same Anderson tree with Collection coloring — per-collection colors scale with the variety of collections in the vault.">
+    <figcaption>Collection</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/cr-canvas-tree-color-monochrome.png" alt="Same Anderson tree with Monochrome coloring — all cards in one neutral color, print-friendly variant.">
+    <figcaption>Monochrome</figcaption>
+  </figure>
+</div>
+
+Per-collection coloring scales with vault diversity. The Anderson fixture has limited collection variety here. Vaults that group persons across multiple collections (maternal vs. paternal lines, immigration cohorts, household groups) see richer differentiation.
+
 [Read more: Visual Trees →](https://github.com/banisterious/obsidian-charted-roots/wiki/Visual-Trees)
 
 ---
