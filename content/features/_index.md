@@ -78,6 +78,7 @@ Interactive mapping powered by Leaflet.js, with support for both real-world coor
 - Heat maps and time-slider animation across decades
 - Mini-map overview
 - Layer toggles for events, places, and child maps
+- Marker popups show ages and full `from – to` date ranges, with proper era handling for fictional calendars (BBY descending, BBY-to-ABY crossings)
 
 <video autoplay muted loop playsinline preload="metadata" src="/img/cr-interactive-map-time.webm" aria-label="Scrubbing the time-slider across decades on the interactive map, with markers appearing and disappearing"></video>
 
@@ -87,6 +88,7 @@ Interactive mapping powered by Leaflet.js, with support for both real-world coor
 - Animated step-through playback with prev / play / next controls and variable speed (0.25× to 2.5×)
 - Rich waypoint popups with event type, date, place, age at event, duration at location, and description
 - Family-journey overlay with color-coded paths for parents, spouses, and children
+- Inline placeholder when a person doesn't have at least 2 places with valid coordinates, naming the person and what's needed
 
 <video autoplay muted loop playsinline preload="metadata" src="/img/cr-interactive-map-journey.webm" aria-label="Stepping through a person's life journey on the map, with waypoints animating in chronological order"></video>
 
@@ -97,6 +99,7 @@ Interactive mapping powered by Leaflet.js, with support for both real-world coor
 - Draggable place markers with automatic persistence
 - Linked-map drill-down navigation with breadcrumbs (parent-child map hierarchies)
 - Child map markers on parent maps, with on-map region editing (draggable rectangle that saves `parent_region_x/y/w/h` back to frontmatter)
+- Journey paths build correctly for pixel-coord places, so person journeys work across image-based maps the same way they do across geographic maps
 
 **Location Tools:**
 
@@ -136,6 +139,7 @@ A dockable profile panel that auto-syncs to the active note and displays related
 - State persistence across sessions (pinned entity, section states, breadcrumbs)
 - Lazy rendering and keyboard navigation on section headers (WAI-ARIA accordion)
 - Embedded Leaflet map preview for place profiles
+- Children block labels stepchildren and adopted children with their specific category, falling back to "Child" only when neither marker applies
 
 [Read more: Entity Profile View →](https://github.com/banisterious/obsidian-charted-roots/wiki/Entity-Profile-View)
 
@@ -151,7 +155,7 @@ A dockable view surfacing vault-wide analytics. See [Statistics and reports](#st
 
 Live-rendered blocks that show computed data inside entity notes when viewed in reading mode.
 
-- **Timeline block**: chronologically ordered events for a person or family, with configurable layout modes (chronological, grouped by personal / family / context, personal-first) and customizable formatting
+- **Timeline block**: chronologically ordered events for a person or family, with configurable layout modes (chronological, grouped by personal / family / context, personal-first) and customizable formatting. Spouse death events appear on surviving spouses' timelines by default, and stepchildren's births stay on biological-parent timelines without bleeding into stepparent timelines.
 - **Relationships block**: family connections as clickable links with optional family-events inclusion
 - **Media block**: photos and PDFs attached to the note, with first-page PDF thumbnail previews and image-crop regions for face thumbnails
 - **Sources block**: sources referenced by the entity, grouped with citation metadata and quality badges
@@ -186,6 +190,7 @@ Tools for creating, organizing, and maintaining the data in your vault.
 
 - Automatic reciprocal relationship maintenance (add A → B, B → A written on save)
 - Dual storage: wikilinks for readability, `cr_id` references for tracking that survives note renames
+- Person-delete cleanup: when a person note is removed, their cr_id is automatically removed from referencing notes' `*_id` arrays (parents, spouses, children, step-, adoptive-, and indexed-spouse slots, plus user-aliased equivalents)
 
 ### Data Quality Tools
 
@@ -234,6 +239,7 @@ Tools for computing, visualizing, and customizing how people connect.
 - 25 built-in non-family relationship types across legal, religious, professional, social, feudal, and DNA categories (godparent, guardian, mentor, apprentice, ally, rival, witness, etc.) — plus full support for defining your own (sire, nemesis, sworn rival, or anything else your story needs)
 - Symmetric types (`neighbor`, `ally`, `companion`) auto-propagate to both people; asymmetric pairs (`mentor` → `disciple`, `godparent` → `godchild`) maintain a clear directionality
 - Colored canvas edges and family-chart overlay rendering per type
+- Overlay arcs paint on top of family links by default; layering flips when stacks reach 3+ to keep dense areas readable
 
 ### Step and Adoptive Parents
 
@@ -357,6 +363,7 @@ Tools designed for worldbuilders, novelists, and RPG creators who document ficti
 
 - First-class entity type for organizing a fictional world
 - Metadata, linked calendars, maps, and validation schemas
+- Universe wizard step 2 offers a three-way calendar picker (None, Built-in, Custom), with slug-match preselection so a "Star Wars" universe auto-selects Galactic Standard, "Middle-earth" auto-selects Middle-earth Calendar, and so on. The Edit Universe modal exposes the same Calendar field, and the Universes tab shows the linked default calendar as a sub-line under entity counts.
 - Auto-generated dynamic content blocks for every entity scoped to the universe:
   - `charted-roots-universe-people`: tables of characters
   - `charted-roots-universe-places`: tables of locations with place types
