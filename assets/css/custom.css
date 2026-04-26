@@ -111,3 +111,37 @@ article video {
   border-radius: 0.5rem;
   background: rgb(var(--color-neutral-100));
 }
+
+/* Static figure embeds in article content */
+article figure {
+  margin: 1.5rem 0;
+}
+article figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+article figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-style: italic;
+  text-align: center;
+  color: rgb(var(--color-neutral-700));
+}
+
+/* Two-column comparison grid (Canvas tree layouts and similar) */
+.cr-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.cr-grid-2 > figure {
+  margin: 0;
+}
+@media (max-width: 700px) {
+  .cr-grid-2 {
+    grid-template-columns: 1fr;
+  }
+}

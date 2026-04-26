@@ -29,6 +29,10 @@ Charted Roots is a genealogy and worldbuilding plugin for Obsidian. Your data li
 
 Generate family tree visualizations directly on Obsidian Canvas using layout algorithms tuned for genealogy data.
 
+<figure>
+  <img src="/img/cr-canvas-tree-multi-generational.png" alt="Royal European lineage rendered as a multi-generational Charted Roots canvas tree showing several centuries of descent.">
+</figure>
+
 - Automated genealogical layout with no overlapping nodes
 - Multiple tree types: ancestor, descendant, and full family trees with configurable generation limits
 - Layout algorithms: Standard, Compact (50% tighter spacing), Timeline (chronological), Hourglass (focused lineage)
@@ -38,6 +42,25 @@ Generate family tree visualizations directly on Obsidian Canvas using layout alg
 - Regenerate canvases with updated data via right-click context menu
 
 <video autoplay muted loop playsinline preload="metadata" src="/img/cr-canvas-tree-generation.webm" aria-label="Generating a family tree on Obsidian Canvas: select root, click Generate, layout animates"></video>
+
+<div class="cr-grid-2">
+  <figure>
+    <img src="/img/cr-canvas-tree-standard.png" alt="Canvas tree in Standard layout — Anderson family rendered with default spacing.">
+    <figcaption>Standard</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/cr-canvas-tree-compact.png" alt="Canvas tree in Compact layout — same Anderson family with 50% tighter spacing.">
+    <figcaption>Compact</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/cr-canvas-tree-timeline.png" alt="Canvas tree in Timeline layout — Anderson family arranged chronologically.">
+    <figcaption>Timeline</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/cr-canvas-tree-hourglass.png" alt="Canvas tree in Hourglass layout — Anderson family centered on a focal generation.">
+    <figcaption>Hourglass</figcaption>
+  </figure>
+</div>
 
 [Read more: Visual Trees →](https://github.com/banisterious/obsidian-charted-roots/wiki/Visual-Trees)
 
