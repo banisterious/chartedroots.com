@@ -74,6 +74,10 @@ Dockable views that live alongside your notes in the Obsidian [workspace](https:
 
 A persistent visualization panel for real-time exploration and editing.
 
+<figure>
+  <img src="/img/cr-family-chart-live.png" alt="Charted Roots Interactive Family Chart View showing the Anderson family with William Anderson selected. Person Details panel open on the right showing first name, last name, alt name, dates, places, sex, collection, spouses, and children.">
+</figure>
+
 - Click a card to open a Person Details panel with inline field editing
 - Bidirectional sync: chart edits update frontmatter, file changes refresh the chart
 - Card styles: rectangle with avatars, circle, compact
@@ -84,7 +88,23 @@ A persistent visualization panel for real-time exploration and editing.
 - **Custom Relationships Overlay**: render non-family connections (mentor, rival, sire, liege) as styled overlay lines on top of the biological tree, with per-type toggles
 - High-quality export to PNG, SVG, PDF, or ODT with customizable filenames
 
+<div class="cr-grid-2">
+  <figure>
+    <img src="/img/cr-family-chart-gender.png" alt="Family Chart view of the Anderson family with default gender coloring — teal cards for male persons, pink for female.">
+    <figcaption>Default gender coloring</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/cr-family-chart-theme-earth-tones.png" alt="Same Anderson family chart with the Earth tones theme preset applied — green cards for male, red for female, replacing the default teal and pink palette.">
+    <figcaption>Earth tones theme preset</figcaption>
+  </figure>
+</div>
+
 <video autoplay muted loop playsinline preload="metadata" src="/img/cr-family-chart-relationship-edit.webm" aria-label="Editing a relationship on the Family Chart View, with the chart updating in real time"></video>
+
+<figure>
+  <img src="/img/cr-family-chart-highlight-groups.png" alt="Family Chart view with two Highlight Groups active. Cards not matching either filter are dimmed; matching cards glow in their group's accent color.">
+  <figcaption>Two highlight groups active</figcaption>
+</figure>
 
 <video autoplay muted loop playsinline preload="metadata" src="/img/cr-family-chart-highlight-groups.webm" aria-label="Adding highlight groups on the Family Chart View; matching cards light up in colored outlines while non-matching cards dim, revealing categories of people across the tree"></video>
 
