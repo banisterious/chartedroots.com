@@ -464,6 +464,19 @@ Purpose-built Obsidian Web Clipper templates for the genealogical web. Clipped p
 
 <video muted loop playsinline preload="none" data-cr-lazy-src="/img/cr-web-clipper-to-bio.webm" aria-label="Clipping a Wikipedia biography page with the Web Clipper extension; the resulting source note appears in the Obsidian Staging folder"></video>
 
+<div class="cr-grid-2">
+  <figure>
+    <img src="/img/cr-web-clipper-modal.webp" alt="Obsidian Web Clipper modal mid-clip on a Find a Grave page; the findagrave-person template extracts structured genealogy fields into the modal's preview">
+    <figcaption>Find a Grave clip</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/cr-web-clipper-staging-note.png" alt="Resulting staged note in the Charted Roots Staging folder; properties expanded showing 10 frontmatter fields, body rendered with Vital Information section">
+    <figcaption>Staged in vault</figcaption>
+  </figure>
+</div>
+
+The Charted Roots clipper templates write to a Staging folder so you can review extracted fields before importing as plugin-managed source notes. The structured frontmatter (dates, places, source URL, clip date, type) is preserved end-to-end; a plain browser bookmark loses all of it.
+
 ### Person Roles in Sources
 
 - `person_roles` on source notes for first-class informant / enumerator / clerk / author modeling
