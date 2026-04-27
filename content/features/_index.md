@@ -139,6 +139,10 @@ Interactive mapping powered by Leaflet.js, with support for both real-world coor
 
 **Interactive Map View:**
 
+<figure>
+  <img src="/img/cr-map-migration-paths.webp" alt="Interactive Map showing William Anderson's migration arc across the eastern US with rich birth marker popup">
+</figure>
+
 - Color-coded markers (green for birth, red for death)
 - Marker clustering for dense data
 - Heat maps and time-slider animation across decades
@@ -148,6 +152,17 @@ Interactive mapping powered by Leaflet.js, with support for both real-world coor
 
 <video autoplay muted loop playsinline preload="metadata" src="/img/cr-interactive-map-time.webm" aria-label="Scrubbing the time-slider across decades on the interactive map, with markers appearing and disappearing"></video>
 
+<div class="cr-grid-2">
+  <figure>
+    <img src="/img/cr-map-heat.webp" alt="Heat-map view across North America and Atlantic">
+    <figcaption>Heat map</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/cr-map-marker-popup.png" alt="Marker popup showing residence with date range and age">
+    <figcaption>Enriched popup</figcaption>
+  </figure>
+</div>
+
 **Journey Mode:**
 
 - Isolate a single person's movements across their life as ordered waypoints
@@ -155,6 +170,17 @@ Interactive mapping powered by Leaflet.js, with support for both real-world coor
 - Rich waypoint popups with event type, date, place, age at event, duration at location, and description
 - Family-journey overlay with color-coded paths for parents, spouses, and children
 - Inline placeholder when a person doesn't have at least 2 places with valid coordinates, naming the person and what's needed
+
+<div class="cr-grid-2">
+  <figure>
+    <img src="/img/cr-map-journey-playback.webp" alt="Journey playback panel with rich waypoint popup at Philadelphia occupation">
+    <figcaption>Single-person playback</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/cr-map-family-journey-overlay.webp" alt="Family-journey overlay with color-coded paths for spouse and children">
+    <figcaption>Family overlay</figcaption>
+  </figure>
+</div>
 
 <video autoplay muted loop playsinline preload="metadata" src="/img/cr-interactive-map-journey.webm" aria-label="Stepping through a person's life journey on the map, with waypoints animating in chronological order"></video>
 
@@ -166,6 +192,17 @@ Interactive mapping powered by Leaflet.js, with support for both real-world coor
 - Linked-map drill-down navigation with breadcrumbs (parent-child map hierarchies)
 - Child map markers on parent maps, with on-map region editing (draggable rectangle that saves `parent_region_x/y/w/h` back to frontmatter)
 - Journey paths build correctly for pixel-coord places, so person journeys work across image-based maps the same way they do across geographic maps
+
+<div class="cr-grid-2">
+  <figure>
+    <img src="/img/cr-map-custom-image.webp" alt="The Dying Earth custom image map with waypoint markers on illustrated terrain">
+    <figcaption>Custom image map</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/cr-map-drilldown-breadcrumbs.webp" alt="Child map of the River Scaum with breadcrumb back to parent Dying Earth map">
+    <figcaption>Child map drill-down</figcaption>
+  </figure>
+</div>
 
 **Location Tools:**
 
