@@ -227,6 +227,17 @@ A monthly calendar workspace view showing significant dates across the vault.
 - State persistence across reloads (month, year, filters, label toggle)
 - Entry points from the command palette, Control Center dashboard tile, Events tab, and person / event context menus
 
+<div class="cr-grid-2">
+  <figure>
+    <img src="/img/cr-calendar-view-realworld.png" alt="Calendar View showing June 1928 with multiple Anderson family birth and marriage events; day-click detail panel open on William and Margaret's marriage">
+    <figcaption>Real-world calendar</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/cr-calendar-view-fictional.png" alt="Calendar View showing April 1499 with Gaean Reach character birth and death events; day-click detail panel open on the Mount Pleasant Massacre day">
+    <figcaption>Fictional calendar</figcaption>
+  </figure>
+</div>
+
 [Read more: Calendar View →](https://github.com/banisterious/obsidian-charted-roots/wiki/Calendar-View)
 
 ### Entity Profile View
