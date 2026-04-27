@@ -233,6 +233,10 @@ A monthly calendar workspace view showing significant dates across the vault.
 
 A dockable profile panel that auto-syncs to the active note and displays related data for any entity type (Person, Place, Event, Source, Organization) in collapsible sections.
 
+<figure>
+  <img src="/img/cr-entity-profile-person.png" alt="Entity Profile View showing William Anderson with relationships and events sections populated">
+</figure>
+
 - Auto-syncs with a 150ms debounce as you switch notes
 - Identity header with entity type badge, avatar, key metadata, and pin toggle
 - Collapsible sections per entity type: Relationships, Events, Sources, Media, Data Quality for persons; Events at location, Sources, Media, Map preview for places; Participants, Sources, Media for events; Referenced Facts, Media for sources; Members, Events, Sources, Media for organizations
@@ -243,6 +247,25 @@ A dockable profile panel that auto-syncs to the active note and displays related
 - Lazy rendering and keyboard navigation on section headers (WAI-ARIA accordion)
 - Embedded Leaflet map preview for place profiles
 - Children block labels stepchildren and adopted children with their specific category, falling back to "Child" only when neither marker applies
+
+<div class="cr-grid-2">
+  <figure>
+    <img src="/img/cr-entity-profile-place.png" alt="Entity Profile View showing Atlanta Fulton County with map preview, events, and sources">
+    <figcaption>Place</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/cr-entity-profile-event.png" alt="Entity Profile View showing the Marriage of William Anderson and Margaret O'Brien with participants section">
+    <figcaption>Event</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/cr-entity-profile-source.png" alt="Entity Profile View showing the 1950 US Federal Census with referenced facts grouped by entity">
+    <figcaption>Source</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/cr-entity-profile-organization.png" alt="Entity Profile View showing the Inter-World Police Coordinating Company with members, events, and sources sections">
+    <figcaption>Organization</figcaption>
+  </figure>
+</div>
 
 [Read more: Entity Profile View →](https://github.com/banisterious/obsidian-charted-roots/wiki/Entity-Profile-View)
 
