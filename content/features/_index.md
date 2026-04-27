@@ -378,6 +378,8 @@ Tools for computing, visualizing, and customizing how people connect.
 - Colored canvas edges and family-chart overlay rendering per type
 - Overlay arcs paint on top of family links by default; layering flips when stacks reach 3+ to keep dense areas readable
 
+<video muted loop playsinline preload="none" data-cr-lazy-src="/img/cr-custom-relationships-overlay.webm" aria-label="Family Chart View with the Custom Relationships Overlay toggled on; styled arcs draw over the biological tree linking William Anderson to mentor, best friend, and business partner relationships"></video>
+
 ### Step and Adoptive Parents
 
 - Dedicated fields with distinct line styles on canvas trees (dotted for adoptive, dashed for step)
