@@ -41,7 +41,7 @@ Generate family tree visualizations directly on Obsidian Canvas using layout alg
 - Multi-family detection for disconnected family groups
 - Regenerate canvases with updated data via right-click context menu
 
-<video autoplay muted loop playsinline preload="metadata" src="/img/cr-canvas-tree-generation.webm" aria-label="Generating a family tree on Obsidian Canvas: select root, click Generate, layout animates"></video>
+<video muted loop playsinline preload="none" data-cr-lazy-src="/img/cr-canvas-tree-generation.webm" aria-label="Generating a family tree on Obsidian Canvas: select root, click Generate, layout animates"></video>
 
 <div class="cr-grid-2">
   <figure>
@@ -122,14 +122,14 @@ A persistent visualization panel for real-time exploration and editing.
   </figure>
 </div>
 
-<video autoplay muted loop playsinline preload="metadata" src="/img/cr-family-chart-relationship-edit.webm" aria-label="Editing a relationship on the Family Chart View, with the chart updating in real time"></video>
+<video muted loop playsinline preload="none" data-cr-lazy-src="/img/cr-family-chart-relationship-edit.webm" aria-label="Editing a relationship on the Family Chart View, with the chart updating in real time"></video>
 
 <figure>
   <img src="/img/cr-family-chart-highlight-groups.png" alt="Family Chart view with two Highlight Groups active. Cards not matching either filter are dimmed; matching cards glow in their group's accent color.">
   <figcaption>Two highlight groups active</figcaption>
 </figure>
 
-<video autoplay muted loop playsinline preload="metadata" src="/img/cr-family-chart-highlight-groups.webm" aria-label="Adding highlight groups on the Family Chart View; matching cards light up in colored outlines while non-matching cards dim, revealing categories of people across the tree"></video>
+<video muted loop playsinline preload="none" data-cr-lazy-src="/img/cr-family-chart-highlight-groups.webm" aria-label="Adding highlight groups on the Family Chart View; matching cards light up in colored outlines while non-matching cards dim, revealing categories of people across the tree"></video>
 
 [Read more: Family Chart View →](https://github.com/banisterious/obsidian-charted-roots/wiki/Family-Chart-View)
 
@@ -150,7 +150,7 @@ Interactive mapping powered by Leaflet.js, with support for both real-world coor
 - Layer toggles for events, places, and child maps
 - Marker popups show ages and full `from – to` date ranges, with proper era handling for fictional calendars (BBY descending, BBY-to-ABY crossings)
 
-<video autoplay muted loop playsinline preload="metadata" src="/img/cr-interactive-map-time.webm" aria-label="Scrubbing the time-slider across decades on the interactive map, with markers appearing and disappearing"></video>
+<video muted loop playsinline preload="none" data-cr-lazy-src="/img/cr-interactive-map-time.webm" aria-label="Scrubbing the time-slider across decades on the interactive map, with markers appearing and disappearing"></video>
 
 <div class="cr-grid-2">
   <figure>
@@ -182,7 +182,7 @@ Interactive mapping powered by Leaflet.js, with support for both real-world coor
   </figure>
 </div>
 
-<video autoplay muted loop playsinline preload="metadata" src="/img/cr-interactive-map-journey.webm" aria-label="Stepping through a person's life journey on the map, with waypoints animating in chronological order"></video>
+<video muted loop playsinline preload="none" data-cr-lazy-src="/img/cr-interactive-map-journey.webm" aria-label="Stepping through a person's life journey on the map, with waypoints animating in chronological order"></video>
 
 **Custom Image Maps:**
 
@@ -303,7 +303,7 @@ Tools for creating, organizing, and maintaining the data in your vault.
 - Batch normalization for dates and other format issues
 - 14-step post-import cleanup wizard covering dates, genders, relationships, places, sources, and property migrations
 
-<video autoplay muted loop playsinline preload="metadata" src="/img/cr-merge-wizard-conflict-res.webm" aria-label="Resolving field conflicts in the duplicate-merge wizard"></video>
+<video muted loop playsinline preload="none" data-cr-lazy-src="/img/cr-merge-wizard-conflict-res.webm" aria-label="Resolving field conflicts in the duplicate-merge wizard"></video>
 
 ### Schema Validation
 
@@ -426,7 +426,7 @@ Purpose-built Obsidian Web Clipper templates for the genealogical web. Clipped p
 - **Wikidata Place**: AI-assisted variant for place entities with coordinates
 - Works with the standard Obsidian Web Clipper plugin (no custom browser extension)
 
-<video autoplay muted loop playsinline preload="metadata" src="/img/cr-web-clipper-to-bio.webm" aria-label="Clipping a Wikipedia biography page with the Web Clipper extension; the resulting source note appears in the Obsidian Staging folder"></video>
+<video muted loop playsinline preload="none" data-cr-lazy-src="/img/cr-web-clipper-to-bio.webm" aria-label="Clipping a Wikipedia biography page with the Web Clipper extension; the resulting source note appears in the Obsidian Staging folder"></video>
 
 ### Person Roles in Sources
 
