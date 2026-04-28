@@ -145,3 +145,19 @@ article figure figcaption {
     grid-template-columns: 1fr;
   }
 }
+
+/* Three-column gallery grid (Reports gallery and similar) */
+.cr-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.cr-grid-3 > figure {
+  margin: 0;
+}
+@media (max-width: 700px) {
+  .cr-grid-3 {
+    grid-template-columns: 1fr;
+  }
+}

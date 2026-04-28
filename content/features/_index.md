@@ -339,6 +339,11 @@ Tools for creating, organizing, and maintaining the data in your vault.
 
 <video muted loop playsinline preload="none" data-cr-lazy-src="/img/cr-merge-wizard-conflict-res.webm" aria-label="Resolving field conflicts in the duplicate-merge wizard"></video>
 
+<figure class="cr-figure">
+  <img src="/img/cr-cleanup-wizard.png" alt="Post-import cleanup wizard overview showing 14 numbered steps with detected-issue counts" loading="lazy">
+  <figcaption>The post-import cleanup wizard surfaces a 14-step plan after analyzing your vault. Pre-scan results show how many fixes each step has identified; dependency-aware ordering recommends the right sequence.</figcaption>
+</figure>
+
 ### Schema Validation
 
 - User-defined schemas with required properties
@@ -476,6 +481,16 @@ Purpose-built Obsidian Web Clipper templates for the genealogical web. Clipped p
 </div>
 
 The Charted Roots clipper templates write to a Staging folder so you can review extracted fields before importing as plugin-managed source notes. The structured frontmatter (dates, places, source URL, clip date, type) is preserved end-to-end; a plain browser bookmark loses all of it.
+
+<figure class="cr-figure">
+  <img src="/img/cr-source-hierarchy.png" alt="Probate packet source profile showing its three child documents" loading="lazy">
+  <figcaption>A probate packet showing its constituent documents — wills, inventories, and administrative letters — surfaced via the parent-child source relationship.</figcaption>
+</figure>
+
+<figure class="cr-figure">
+  <img src="/img/cr-entity-attribution.png" alt="Person profile showing per-fact source citations grouped by source, with quality indicators and overall coverage percentage" loading="lazy">
+  <figcaption>Citations grouped by source on a person profile, with page references and GEDCOM-style quality indicators. Coverage percentage in the data-quality section tracks sourced facts against the full set.</figcaption>
+</figure>
 
 ### Person Roles in Sources
 
@@ -637,6 +652,23 @@ Export as PDF, ODT, or Markdown:
 - Universe overviews
 - Collection overviews
 - Research reports
+
+The shots below sample three representative outputs: a graphical pedigree, a structured family group sheet, and a research-focused source summary.
+
+<div class="cr-grid-3">
+  <figure>
+    <img src="/img/cr-report-pedigree-tree.png" alt="Graphical pedigree tree PDF showing four generations of Queen Victoria's ancestors" loading="lazy">
+    <figcaption>Pedigree tree — graphical, multi-generational ancestry rendered as a PDF.</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/cr-report-family-group-sheet.png" alt="Family group sheet PDF for William Anderson and Margaret O'Brien with structured vital records" loading="lazy">
+    <figcaption>Family group sheet — couple, children, vitals, and sources in a printable layout.</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/cr-report-source-summary.png" alt="Source summary PDF showing facts grouped by source with quality ratings and coverage statistics" loading="lazy">
+    <figcaption>Source summary — facts grouped by source, with quality ratings and gap analysis.</figcaption>
+  </figure>
+</div>
 
 ### Book Builder
 
