@@ -94,11 +94,9 @@ enableEmoji = true
     pageRef = "faq"
     weight = 35
   [[menu.main]]
-    name = "GitHub"
+    pre = "github"
     url = "https://github.com/banisterious/obsidian-charted-roots"
     weight = 40
-    [menu.main.params]
-      icon = "github"
 
 # Markup settings
 [markup]
