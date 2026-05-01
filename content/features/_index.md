@@ -131,6 +131,8 @@ A persistent visualization panel for real-time exploration and editing.
 
 <video muted loop playsinline preload="none" data-cr-lazy-src="/img/cr-family-chart-highlight-groups.webm" aria-label="Adding highlight groups on the Family Chart View; matching cards light up in colored outlines while non-matching cards dim, revealing categories of people across the tree"></video>
 
+[Guide: Add my first person from scratch →](/guides/research/add-first-person-manually/) · *Generate a printable family tree (coming soon)*
+
 [Read more: Family Chart View →](https://github.com/banisterious/obsidian-charted-roots/wiki/Family-Chart-View)
 
 ### Geographic features
@@ -544,6 +546,8 @@ Clips first land in a Staging folder so you can review extracted fields before i
 - Historical context overlay and age annotations on timelines
 - Customizable timeline display templates with `{year}`, `{title}`, `{place}`, `{age}` placeholders
 
+[Guide: Set up per-fact source citations →](/guides/research/set-up-source-tracking/)
+
 [Read more: Evidence and Sources →](https://github.com/banisterious/obsidian-charted-roots/wiki/Evidence-And-Sources)
 
 ---
@@ -651,6 +655,8 @@ Comprehensive round-trip import and export with UUID preservation.
 
 - Privacy-aware exports with optional anonymization of living persons
 - Full entity export for people, events, sources, places, and custom relationships
+
+[Guide: Import a GEDCOM file and clean up the result →](/guides/research/import-gedcom-and-cleanup/)
 
 [Read more: Import / Export →](https://github.com/banisterious/obsidian-charted-roots/wiki/Import-Export)
 
