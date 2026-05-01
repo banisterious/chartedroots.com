@@ -55,6 +55,9 @@ enableEmoji = true
   enableSearch = true
   enableCodeCopy = true
 
+  # Brand area: render the logo only, not the duplicated site title text
+  disableTextInHeader = true
+
   # Logo and branding
   logo = "img/logo.svg"
 
@@ -81,18 +84,31 @@ enableEmoji = true
     name = "Worldbuilding"
     pageRef = "worldbuilding"
     weight = 20
+  # Docs dropdown — parent has no URL so click toggles the menu
   [[menu.main]]
-    name = "Documentation"
-    url = "https://github.com/banisterious/obsidian-charted-roots/wiki"
+    identifier = "docs"
+    name = "Docs"
     weight = 25
   [[menu.main]]
-    name = "Changelog"
-    pageRef = "changelog"
-    weight = 30
+    parent = "docs"
+    name = "Guides"
+    pageRef = "guides"
+    weight = 1
   [[menu.main]]
+    parent = "docs"
+    name = "Documentation"
+    url = "https://github.com/banisterious/obsidian-charted-roots/wiki"
+    weight = 2
+  [[menu.main]]
+    parent = "docs"
     name = "FAQ"
     pageRef = "faq"
-    weight = 35
+    weight = 3
+  [[menu.main]]
+    parent = "docs"
+    name = "Changelog"
+    pageRef = "changelog"
+    weight = 4
   [[menu.main]]
     pre = "github"
     url = "https://github.com/banisterious/obsidian-charted-roots"
