@@ -496,7 +496,7 @@ Supporting tools:
 
 ### Web Clipper integration
 
-Purpose-built Obsidian Web Clipper templates for the genealogical web. Clipped pages land as source notes with citation metadata already populated.
+Charted Roots threads sources from capture to attribution: clip a record in the browser, get a structured source note in your vault, attribute it to specific facts on the people it documents. Purpose-built Obsidian Web Clipper templates handle the structured extraction; standard Obsidian properties carry the data through.
 
 - **Find a Grave Person**: CSS and AI-assisted variants for memorial pages
 - **FamilySearch Source**: CSS and AI-assisted variants for indexed records and browse-only collections
@@ -506,18 +506,22 @@ Purpose-built Obsidian Web Clipper templates for the genealogical web. Clipped p
 
 <video muted loop playsinline preload="none" data-cr-lazy-src="/img/cr-web-clipper-to-bio.webm" aria-label="Clipping a Wikipedia biography page with the Web Clipper extension; the resulting source note appears in the Obsidian Staging folder"></video>
 
-<div class="cr-grid-2">
+<div class="cr-grid-3">
   <figure>
-    <img src="/img/cr-web-clipper-modal.webp" alt="Obsidian Web Clipper modal mid-clip on a Find a Grave page; the findagrave-person template extracts structured genealogy fields into the modal's preview">
-    <figcaption>Find a Grave clip</figcaption>
+    <img src="/img/cr-workflow-clip.webp" alt="Browser-side Web Clipper extracting structured fields from the Charles Hoy Fort Find a Grave memorial page — vital data (birth, death, burial) visible on the page; the findagrave-person template's clipper modal expanded on the right showing the structured-property preview with target Charted Roots/Staging" loading="lazy">
+    <figcaption>1. Clip from browser</figcaption>
   </figure>
   <figure>
-    <img src="/img/cr-web-clipper-staging-note.png" alt="Resulting staged note in the Charted Roots Staging folder; properties expanded showing 10 frontmatter fields, body rendered with Vital Information section">
-    <figcaption>Staged in vault</figcaption>
+    <img src="/img/cr-workflow-source-note.png" alt="Obsidian source note for Charles Hoy Fort with the properties block fully expanded showing all 12 frontmatter fields (cr_type, cr_id, clip_source_type, clipped_from, clipped_date, note_type, name, birth/death/burial dates and places); folder pane shows the Sources folder with the new note highlighted alongside 13 existing sources" loading="lazy">
+    <figcaption>2. Source note in vault</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/cr-workflow-attribution.png" alt="Two-pane view of the Charles Hoy Fort person note: properties block showing four sourced_* properties pointing at the new source; Entity Profile View on the right with Citations section (4 entries tagged Memorial ID 3079, Secondary evidence), Sources, Media, and Data quality section showing 40% (4/10 facts) coverage" loading="lazy">
+    <figcaption>3. Attribution on person profile</figcaption>
   </figure>
 </div>
 
-The Charted Roots clipper templates write to a Staging folder so you can review extracted fields before importing as plugin-managed source notes. The structured frontmatter (dates, places, source URL, clip date, type) is preserved end-to-end; a plain browser bookmark loses all of it.
+Clips first land in a Staging folder so you can review extracted fields before importing as plugin-managed source notes. The structured frontmatter (dates, places, source URL, clip date, type) is preserved end-to-end; a plain browser bookmark loses all of it.
 
 <figure class="cr-figure">
   <img src="/img/cr-source-hierarchy.png" alt="Probate packet source profile showing its three child documents" loading="lazy">
