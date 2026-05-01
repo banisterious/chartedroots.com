@@ -362,6 +362,43 @@ Tools for creating, organizing, and maintaining the data in your vault.
 - Property aliases map custom property names to canonical Charted Roots properties (e.g., `born` vs. `birth` vs. `birthDate`)
 - Value aliases map custom values to canonical Charted Roots values (e.g., "male" / "m" / "M" all normalize)
 
+### Edit Person
+
+- Single modal for events, family relationships, and inline editing
+- Events list with type, date, and location per entry; supports fictional-era dates so worldbuilder vaults round-trip cleanly
+- Family relationships: parents, spouses, and children with their own date metadata (marriage, divorce, etc.)
+- Inline add / edit / delete affordances on every row; link affordances for empty parent slots
+
+<figure class="cr-figure">
+  <img src="/img/cr-edit-person-modal.png" alt="Edit Person modal for Cugel the Clever from the Dying Earth fixture. Events section at top lists four entries with fictional DE-era dates: a residence at Asromirel (DE 1185), the marriage to Derwe Coreme (DE 1205), an occupation entry (DE 1198), and the birth (DE 1169). Family relationships section below shows Father and Mother with empty Link affordances, and Spouses populated with Derwe Coreme plus the marriage date DE 1205. Save and Cancel buttons in viewport." loading="lazy">
+  <figcaption>Edit Person modal — Cugel the Clever (Dying Earth fixture).</figcaption>
+</figure>
+
+### Control Center
+
+- Workspace-wide tab strip for browsing and managing every entity type the plugin tracks
+- Tabular data per tab with type badges, completeness metrics, and drill-down affordances
+- Collections / Sources / Places / Events shown below
+
+<div class="cr-grid-2">
+  <figure>
+    <img src="/img/cr-control-center-collections.png" alt="Control Center Collections tab — analytics row showing 101 total people, 29 collections, average size 4, no bridge people; data completeness bars for Birth (77%), Death (28%), and Sex (100%); collection highlights with the largest blood collection at 46 entries spanning years 1428 through 8002 (a 6574-year range across real and fictional fixtures); detected families table" loading="lazy">
+    <figcaption>Collections — analytics overview.</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/cr-control-center-sources.png" alt="Control Center Sources tab — tabular source library with type badges (Vital Record, Church Record, legal, Immigration, Military) and the Probate Packet sources from issue #338 visible (Estate Inventory, Last Will, Letters of Administration)" loading="lazy">
+    <figcaption>Sources — typed citation library.</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/cr-control-center-places.png" alt="Control Center Places tab — fictional places (Almery, Alphanor, Ampridatvir, Araminta Station, Asromirel, Beyond) categorized as Fictional with universe annotations; real places (Arizona, Atlanta, Austin, Baltimore) with categories, types, coordinates, and people counts" loading="lazy">
+    <figcaption>Places — real and fictional with universe annotations.</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/cr-control-center-events.png" alt="Control Center Events tab — chronological timeline spanning 1499 (Mount Pleasant Massacre) through 1865 (William Anderson birth) with six event types and a Data Quality Insights section flagging 15 timeline gaps" loading="lazy">
+    <figcaption>Events — chronological timeline with data-quality insights.</figcaption>
+  </figure>
+</div>
+
 [Read more: Data Management →](https://github.com/banisterious/obsidian-charted-roots/wiki/Data-Management)
 
 ---
