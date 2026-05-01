@@ -524,7 +524,12 @@ Scope is intentionally narrow: track key matches rather than full chromosome ana
 
 ## World Building
 
-Tools designed for worldbuilders, novelists, and RPG creators who document fictional universes alongside (or instead of) real genealogy.
+Tools designed for worldbuilders, novelists, and RPG creators who document fictional universes alongside (or instead of) real genealogy. A universe note pulls together every person, place, event, and organization scoped to that world — auto-generated tables that respect the universe's linked calendar so dates render in its own era.
+
+<figure class="cr-figure">
+  <img src="/img/cr-universe-overview.png" alt="Two-pane split of the Dying Earth universe note: the left pane scrolled to the People (17) section, the right pane scrolled to the Events (28) section, with both blocks rendering DE-era dates" loading="lazy">
+  <figcaption>Universe overview — Dying Earth, dynamic blocks rendering DE-era dates.</figcaption>
+</figure>
 
 ### Universe Notes
 
@@ -682,6 +687,11 @@ A book builder that compiles multiple reports, visual trees, and user-written va
 - Auto-generated name index sorted by last name with alphabetical grouping
 - Chapter numbering (numeric or Roman numeral)
 - Output as PDF or ODT
+
+<figure class="cr-figure">
+  <img src="/img/cr-book-builder-output.png" alt="Page 2 of an Anderson Family History book — the Table of Contents page enumerating Pedigree chart, Descendant chart, Ancestors, Individual summary, Family groups, Family group sheet, Ahnentafel, and Register report; folder pane shows the Reports folder populated with multiple PDF outputs alongside the assembled book" loading="lazy">
+  <figcaption>Compiled book — Table of contents.</figcaption>
+</figure>
 
 [Read more: Statistics and Reports →](https://github.com/banisterious/obsidian-charted-roots/wiki/Statistics-And-Reports)
 
