@@ -21,6 +21,14 @@ Genealogy workflows for tracing real families. Each guide answers a single "I wa
 - [I want to capture a source from a website](clip-a-source-from-the-web/) — Use Obsidian Web Clipper to capture obituaries, Find a Grave, FamilySearch, or Wikipedia into your staging folder. *Medium · ~15 min setup*
 - [I want to attach one source to multiple people](attach-one-source-to-multiple-people/) — Link a single source (census, will, probate packet) to every person it names, with structured roles for FAN-network research. *Easy · ~5 min per source*
 
+### Methodology
+
+- [I want to analyze FAN clusters to break through a brick wall](analyze-fan-clusters/) — Use source roles to track Friends, Associates, and Neighbors across documents, then run the Sources by Role report to surface community networks. *Advanced · ~30+ min for the first cluster*
+- [I want to research enslaved ancestors (Beyond Kin methodology)](research-enslaved-ancestors/) — Document enslaved ancestors via slaveholder records, source hierarchy, and Beyond Kin naming conventions. *Advanced · ~30+ min for the first packet*
+- [I want to handle conflicting evidence between two sources](handle-conflicting-evidence/) — Reconcile contradictory sources using Mills' three-axis classification (source / information / evidence), then capture the resolution. *Advanced · ~30+ min per conflict*
+- [I want to write a proof summary for a contested fact](write-a-proof-summary/) — Document the reasoning chain for a genealogical conclusion using the Create Proof Summary modal. *Advanced · ~30+ min per proof*
+- [I want to track research progress on a long-term project](track-research-progress/) — Use Hoitink's Six Levels for per-ancestor status, plus research reports as living research logs. *Medium · ~15 min to set up*
+
 ### Visualization and reports
 
 - [I want to generate a printable family tree](generate-printable-family-tree/) — Generate a print-ready PDF (or Excalidraw / ODT / Canvas) family tree from a root person. *Easy · ~10 min*
@@ -51,8 +59,8 @@ These ship as they're written:
 - I want to print a wall-sized pedigree
 - I want to set up a staging workflow for messy imports
 - I want to identify which facts in my tree need more research
+- I want to organize a multi-document source collection
 - I want to compare migration paths across siblings
-- I want to analyze FAN clusters to break through a brick wall
 - ...plus more (see the [guides plan](https://github.com/banisterious/obsidian-charted-roots/blob/main/docs/planning/website-content/guides-plan.md) for the full enumeration)
 
 Found something missing? [Suggest a guide](https://github.com/banisterious/obsidian-charted-roots/issues/new?labels=guides&title=%5BGuides%5D+New+request%3A+).
