@@ -346,7 +346,7 @@ Tools for creating, organizing, and maintaining the data in your vault.
   <figcaption>The post-import cleanup wizard surfaces a 14-step plan after analyzing your vault. Pre-scan results show how many fixes each step has identified; dependency-aware ordering recommends the right sequence.</figcaption>
 </figure>
 
-[Guide: Find and merge duplicate persons →](/guides/research/find-and-merge-duplicates/)
+[Guide: Find and merge duplicate persons →](/guides/research/find-and-merge-duplicates/) · [Delete a person and clean up references →](/guides/research/delete-and-clean-up-references/)
 
 ### Schema Validation
 
@@ -377,6 +377,8 @@ Tools for creating, organizing, and maintaining the data in your vault.
   <img src="/img/cr-edit-person-modal.png" alt="Edit Person modal for Cugel the Clever from the Dying Earth fixture. Events section at top lists four entries with fictional DE-era dates: a residence at Asromirel (DE 1185), the marriage to Derwe Coreme (DE 1205), an occupation entry (DE 1198), and the birth (DE 1169). Family relationships section below shows Father and Mother with empty Link affordances, and Spouses populated with Derwe Coreme plus the marriage date DE 1205. Save and Cancel buttons in viewport." loading="lazy">
   <figcaption>Edit Person modal — Cugel the Clever (Dying Earth fixture).</figcaption>
 </figure>
+
+[Guide: Add a new family member →](/guides/research/add-new-family-member/)
 
 ### Control Center
 
@@ -527,6 +529,8 @@ Charted Roots threads sources from capture to attribution: clip a record in the 
 
 Clips first land in a Staging folder so you can review extracted fields before importing as plugin-managed source notes. The structured frontmatter (dates, places, source URL, clip date, type) is preserved end-to-end; a plain browser bookmark loses all of it.
 
+[Guide: Capture a source from a website →](/guides/research/clip-a-source-from-the-web/)
+
 <figure class="cr-figure">
   <img src="/img/cr-source-hierarchy.png" alt="Probate packet source profile showing its three child documents" loading="lazy">
   <figcaption>A probate packet showing its constituent documents — wills, inventories, and administrative letters — surfaced via the parent-child source relationship.</figcaption>
@@ -599,13 +603,13 @@ Tools designed for worldbuilders, novelists, and RPG creators who document ficti
 - Calendarium integration for calendars defined in the Calendarium plugin
 - Date parsing and display respects the active universe's calendar
 
-[Guide: Set up a custom calendar with eras →](/guides/worldbuilding/set-up-custom-calendar/)
+[Guide: Set up a custom calendar with eras →](/guides/worldbuilding/set-up-custom-calendar/) · [Use a built-in calendar →](/guides/worldbuilding/use-built-in-calendar/)
 
 ### Custom Image Maps
 
 See [Geographic features](#geographic-features) above. Maps support pixel-coordinate systems ideal for fictional worlds, linked-map drill-down for multi-scale worldbuilding, and child-map region editing.
 
-[Guide: Create a custom map of my fictional world →](/guides/worldbuilding/create-custom-image-map/)
+[Guide: Create a custom map of my fictional world →](/guides/worldbuilding/create-custom-image-map/) · [Align a hand-drawn map →](/guides/worldbuilding/align-hand-drawn-map/) · [Link drilldown maps for regions →](/guides/worldbuilding/link-drilldown-maps/)
 
 ### Organizations
 
@@ -665,6 +669,8 @@ Comprehensive round-trip import and export with UUID preservation.
 - Full entity export for people, events, sources, places, and custom relationships
 
 [Guide: Import a GEDCOM file and clean up the result →](/guides/research/import-gedcom-and-cleanup/)
+
+**Migrating from a specific tool:** [Family Tree Maker →](/guides/research/migrate-from-family-tree-maker/) · [Ancestry →](/guides/research/migrate-from-ancestry/) · [RootsMagic →](/guides/research/migrate-from-rootsmagic/) · [Gramps →](/guides/research/migrate-from-gramps/)
 
 [Read more: Import / Export →](https://github.com/banisterious/obsidian-charted-roots/wiki/Import-Export)
 

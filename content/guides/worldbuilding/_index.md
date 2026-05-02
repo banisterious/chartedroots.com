@@ -1,6 +1,6 @@
 ---
 title: "Worldbuilding guides"
-description: "Workflows for novelists, RPG creators, and worldbuilders documenting fictional universes. Universe setup, custom calendars, fictional family trees, and custom maps."
+description: "Workflows for novelists, RPG creators, and worldbuilders documenting fictional universes. Universe setup, custom and built-in calendars, fictional family trees, custom maps, alignment, and drilldown linking."
 ---
 
 Workflows for novelists, RPG creators, and worldbuilders documenting fictional universes. Each guide answers a single "I want to..." question with a setup checklist, numbered steps, and pointers to the relevant wiki reference.
@@ -9,16 +9,16 @@ Workflows for novelists, RPG creators, and worldbuilders documenting fictional u
 
 - [I want to create a fictional universe](create-fictional-universe/) — Set up the foundational universe note for your fictional world, with optional linked calendar, map, and validation schema. *Easy · ~5-10 min*
 - [I want to set up a custom calendar with eras](set-up-custom-calendar/) — Define a fictional date system with named eras, abbreviations, and epochs, then use it in person and event frontmatter. *Medium · ~10 min*
+- [I want to use a built-in calendar (Middle-earth / Westeros / Star Wars)](use-built-in-calendar/) — Enable one of Charted Roots' built-in fictional calendars and use its date format. *Easy · ~3 min*
 - [I want to build a family tree for fictional characters](build-fictional-family-tree/) — Add fictional characters to a universe with parent / spouse / child relationships, optionally using a custom calendar for dates. *Easy · ~5 min per character*
 - [I want to create a custom map of my fictional world](create-custom-image-map/) — Use a custom image as the basemap for your universe — drop place markers, optionally align hand-drawn maps, link drilldown maps for regions. *Medium · ~15 min*
+- [I want to align a hand-drawn map to coordinates](align-hand-drawn-map/) — Use Map View's edit mode to position, scale, rotate, and skew a hand-drawn or scanned map until landmarks align. *Medium · ~10-20 min*
+- [I want to link drilldown maps for regions](link-drilldown-maps/) — Link a regional map as a child of a continental or world map for click-through navigation. *Medium · ~5-10 min*
 
 ## Queued
 
 These ship as they're written:
 
-- I want to use a built-in calendar (Middle-earth / Westeros / Star Wars)
-- I want to align a hand-drawn map to coordinates
-- I want to link drilldown maps for regions
 - I want to build a noble house with succession over generations
 - I want to track narrative events alongside vital ones
 - I want to compile a worldbuilding bible from my notes

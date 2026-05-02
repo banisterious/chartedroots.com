@@ -17,7 +17,7 @@ Genealogy workflows for tracing real families. [Browse all research guides →](
 - [I want to import a GEDCOM file and clean up the result](research/import-gedcom-and-cleanup/) — Import a GEDCOM with the Data Quality Preview, normalize place-name variants, and triage duplicates against your existing tree.
 - [I want to find and merge duplicate persons](research/find-and-merge-duplicates/) — Run duplicate detection across your tree, then resolve each pair side-by-side in the Merge Wizard.
 - [I want to set up per-fact source citations](research/set-up-source-tracking/) — Track which sources support each fact about a person, with coverage scoring across your tree.
-- [I want to generate a printable family tree](research/generate-printable-family-tree/) — Generate a print-ready PDF (or Excalidraw / ODT / Canvas) family tree from a root person.
+- [I want to capture a source from a website](research/clip-a-source-from-the-web/) — Use Obsidian Web Clipper to capture obituaries, Find a Grave memorials, FamilySearch profiles, or Wikipedia biographies into your staging folder.
 
 ## Worldbuilding
 
