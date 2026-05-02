@@ -1,6 +1,8 @@
 ---
 title: "Guides"
 description: "Recipe-style walk-throughs for the workflows readers most often ask about. Genealogy and worldbuilding tracks, with setup checklists and numbered steps."
+cascade:
+  showDate: false
 ---
 
 Recipe-style walk-throughs for the workflows readers most often ask about. Each guide answers a single "I want to..." question with a setup checklist, numbered steps, and pointers to the relevant wiki reference for deeper detail. Aimed at readers who already have Charted Roots installed and want to do something specific.
