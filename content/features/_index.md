@@ -212,6 +212,8 @@ Interactive mapping powered by Leaflet.js, with support for both real-world coor
 - Place-based filtering for tree generation by birth, death, or marriage location
 - Migration visualizations with D3 network and arc diagrams
 
+[Guide: Map an ancestor's life →](/guides/research/map-an-ancestor-life/)
+
 [Read more: Geographic Features →](https://github.com/banisterious/obsidian-charted-roots/wiki/Geographic-Features)
 
 ### Calendar View
@@ -239,6 +241,8 @@ A monthly calendar workspace view showing significant dates across the vault.
     <figcaption>Fictional calendar</figcaption>
   </figure>
 </div>
+
+[Guide: Track narrative events alongside vital ones →](/guides/worldbuilding/track-narrative-events/)
 
 [Read more: Calendar View →](https://github.com/banisterious/obsidian-charted-roots/wiki/Calendar-View)
 
@@ -428,6 +432,8 @@ Tools for computing, visualizing, and customizing how people connect.
 
 <video muted loop playsinline preload="none" data-cr-lazy-src="/img/cr-custom-relationships-overlay.webm" aria-label="Family Chart View with the Custom Relationships Overlay toggled on; styled arcs draw over the biological tree linking William Anderson to mentor, best friend, and business partner relationships"></video>
 
+[Guide: Build a noble house with succession over generations →](/guides/worldbuilding/build-noble-house-with-succession/)
+
 ### Step and Adoptive Parents
 
 - Dedicated fields with distinct line styles on canvas trees (dotted for adoptive, dashed for step)
@@ -552,7 +558,7 @@ Clips first land in a Staging folder so you can review extracted fields before i
 - Historical context overlay and age annotations on timelines
 - Customizable timeline display templates with `{year}`, `{title}`, `{place}`, `{age}` placeholders
 
-[Guide: Set up per-fact source citations →](/guides/research/set-up-source-tracking/)
+[Guide: Set up per-fact source citations →](/guides/research/set-up-source-tracking/) · [Attach one source to multiple people →](/guides/research/attach-one-source-to-multiple-people/)
 
 [Read more: Evidence and Sources →](https://github.com/banisterious/obsidian-charted-roots/wiki/Evidence-And-Sources)
 
@@ -594,7 +600,7 @@ Tools designed for worldbuilders, novelists, and RPG creators who document ficti
   - `charted-roots-universe-organizations`: tables of guilds, houses, factions
   - `charted-roots-universe-maps`: clickable thumbnail grid for custom maps
 
-[Guide: Create a fictional universe →](/guides/worldbuilding/create-fictional-universe/) · [Build a family tree for fictional characters →](/guides/worldbuilding/build-fictional-family-tree/)
+[Guide: Create a fictional universe →](/guides/worldbuilding/create-fictional-universe/) · [Build a family tree for fictional characters →](/guides/worldbuilding/build-fictional-family-tree/) · [Compile a worldbuilding bible →](/guides/worldbuilding/compile-worldbuilding-bible/)
 
 ### Fictional Date Systems
 
@@ -621,6 +627,8 @@ Track non-genealogical hierarchies like noble houses, guilds, corporations, mili
 - Role picker autocomplete in membership modals
 - Members dynamic block on organization notes with three-level role ordering fallback
 - Organization membership statistics in the Statistics Dashboard
+
+[Guide: Build a noble house with succession over generations →](/guides/worldbuilding/build-noble-house-with-succession/)
 
 [Read more: Universe Notes →](https://github.com/banisterious/obsidian-charted-roots/wiki/Universe-Notes)
 
@@ -736,6 +744,8 @@ The shots below sample three representative outputs: a graphical pedigree, a str
   </figure>
 </div>
 
+[Guide: Generate a family group sheet →](/guides/research/generate-family-group-sheet/) · [Generate a family reunion report →](/guides/research/generate-family-reunion-report/)
+
 ### Book Builder
 
 A book builder that compiles multiple reports, visual trees, and user-written vault notes into a single sequenced document.
@@ -753,6 +763,8 @@ A book builder that compiles multiple reports, visual trees, and user-written va
   <img src="/img/cr-book-builder-output.png" alt="Page 2 of an Anderson Family History book — the Table of Contents page enumerating Pedigree chart, Descendant chart, Ancestors, Individual summary, Family groups, Family group sheet, Ahnentafel, and Register report; folder pane shows the Reports folder populated with multiple PDF outputs alongside the assembled book" loading="lazy">
   <figcaption>Compiled book — Table of contents.</figcaption>
 </figure>
+
+[Guide: Assemble a family history book →](/guides/research/assemble-family-history-book/) · [Compile a worldbuilding bible →](/guides/worldbuilding/compile-worldbuilding-bible/)
 
 [Read more: Statistics and Reports →](https://github.com/banisterious/obsidian-charted-roots/wiki/Statistics-And-Reports)
 
@@ -773,4 +785,10 @@ Designed to work with the Obsidian ecosystem and adjacent tools.
 - **Context menu actions**: right-click operations across file explorer, canvas, and reading view
 - **YAML-first data**: compatible with Dataview, Bases, and any plugin that reads Obsidian frontmatter
 
+[Guide: Filter and analyze your data with Bases →](/guides/research/use-bases-for-data-analysis/)
+
 [Read more: Bases Integration →](https://github.com/banisterious/obsidian-charted-roots/wiki/Bases-Integration)
+
+---
+
+*If you're helping someone else get started, see [the supporter's guide for non-technical relatives →](/guides/research/onboard-non-technical-relative/).*

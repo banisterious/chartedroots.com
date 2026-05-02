@@ -15,9 +15,9 @@ Genealogy workflows for tracing real families. [Browse all research guides →](
 
 - [I want to add my first person from scratch](research/add-first-person-manually/) — Create your first person note manually, then add relationships when you're ready.
 - [I want to import a GEDCOM file and clean up the result](research/import-gedcom-and-cleanup/) — Import a GEDCOM with the Data Quality Preview, normalize place-name variants, and triage duplicates against your existing tree.
-- [I want to find and merge duplicate persons](research/find-and-merge-duplicates/) — Run duplicate detection across your tree, then resolve each pair side-by-side in the Merge Wizard.
 - [I want to set up per-fact source citations](research/set-up-source-tracking/) — Track which sources support each fact about a person, with coverage scoring across your tree.
-- [I want to capture a source from a website](research/clip-a-source-from-the-web/) — Use Obsidian Web Clipper to capture obituaries, Find a Grave memorials, FamilySearch profiles, or Wikipedia biographies into your staging folder.
+- [I want to map an ancestor's life](research/map-an-ancestor-life/) — Visualize a single ancestor's geographic journey across their lifetime using Map View's journey, heat, and migration overlays.
+- [I want to generate a family group sheet](research/generate-family-group-sheet/) — Use the Report Wizard to generate a printable Family Group Sheet for a couple.
 
 ## Worldbuilding
 
@@ -29,3 +29,4 @@ Workflows for novelists, RPG creators, and worldbuilders documenting fictional u
 - [I want to set up a custom calendar with eras](worldbuilding/set-up-custom-calendar/) — Define a fictional date system with named eras, abbreviations, and epochs.
 - [I want to build a family tree for fictional characters](worldbuilding/build-fictional-family-tree/) — Add fictional characters to a universe with parent / spouse / child relationships.
 - [I want to create a custom map of my fictional world](worldbuilding/create-custom-image-map/) — Use a custom image as the basemap for your universe and drop place markers.
+- [I want to compile a worldbuilding bible from my notes](worldbuilding/compile-worldbuilding-bible/) — Turn the universe note into a living bible with auto-rendered entity tables, embedded maps, and an optional printable export.
