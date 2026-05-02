@@ -28,6 +28,9 @@ Genealogy workflows for tracing real families. Each guide answers a single "I wa
 - [I want to handle conflicting evidence between two sources](handle-conflicting-evidence/) — Reconcile contradictory sources using Mills' three-axis classification (source / information / evidence), then capture the resolution. *Advanced · ~30+ min per conflict*
 - [I want to write a proof summary for a contested fact](write-a-proof-summary/) — Document the reasoning chain for a genealogical conclusion using the Create Proof Summary modal. *Advanced · ~30+ min per proof*
 - [I want to track research progress on a long-term project](track-research-progress/) — Use Hoitink's Six Levels for per-ancestor status, plus research reports as living research logs. *Medium · ~15 min to set up*
+- [I want to identify which facts in my tree need more research](identify-research-gaps/) — Use per-note research questions, the Research Gaps card, and the Gaps Report to find what to work on next. *Medium · ~15 min initial pass*
+- [I want to organize a multi-document source collection](organize-multi-document-source-collections/) — Use the `source_parent` pattern to model probate packets, military pension files, and other multi-document record groups. *Medium · ~15-30 min for the first collection*
+- [I want to track married women and placeholder surnames consistently](name-women-and-placeholder-surnames/) — Use `maiden_name`, `married_names`, and a personal placeholder convention to keep women searchable and handle unknown surnames. *Easy · ~10 min to set the conventions*
 
 ### Visualization and reports
 
@@ -58,8 +61,6 @@ These ship as they're written:
 
 - I want to print a wall-sized pedigree
 - I want to set up a staging workflow for messy imports
-- I want to identify which facts in my tree need more research
-- I want to organize a multi-document source collection
 - I want to compare migration paths across siblings
 - ...plus more (see the [guides plan](https://github.com/banisterious/obsidian-charted-roots/blob/main/docs/planning/website-content/guides-plan.md) for the full enumeration)
 
