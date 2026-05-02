@@ -131,7 +131,7 @@ A persistent visualization panel for real-time exploration and editing.
 
 <video muted loop playsinline preload="none" data-cr-lazy-src="/img/cr-family-chart-highlight-groups.webm" aria-label="Adding highlight groups on the Family Chart View; matching cards light up in colored outlines while non-matching cards dim, revealing categories of people across the tree"></video>
 
-[Guide: Add my first person from scratch →](/guides/research/add-first-person-manually/) · *Generate a printable family tree (coming soon)*
+[Guide: Generate a printable family tree →](/guides/research/generate-printable-family-tree/) · [Add my first person from scratch →](/guides/research/add-first-person-manually/)
 
 [Read more: Family Chart View →](https://github.com/banisterious/obsidian-charted-roots/wiki/Family-Chart-View)
 
@@ -345,6 +345,8 @@ Tools for creating, organizing, and maintaining the data in your vault.
   <img src="/img/cr-cleanup-wizard.png" alt="Post-import cleanup wizard overview showing 14 numbered steps with detected-issue counts" loading="lazy">
   <figcaption>The post-import cleanup wizard surfaces a 14-step plan after analyzing your vault. Pre-scan results show how many fixes each step has identified; dependency-aware ordering recommends the right sequence.</figcaption>
 </figure>
+
+[Guide: Find and merge duplicate persons →](/guides/research/find-and-merge-duplicates/)
 
 ### Schema Validation
 
@@ -588,6 +590,8 @@ Tools designed for worldbuilders, novelists, and RPG creators who document ficti
   - `charted-roots-universe-organizations`: tables of guilds, houses, factions
   - `charted-roots-universe-maps`: clickable thumbnail grid for custom maps
 
+[Guide: Create a fictional universe →](/guides/worldbuilding/create-fictional-universe/) · [Build a family tree for fictional characters →](/guides/worldbuilding/build-fictional-family-tree/)
+
 ### Fictional Date Systems
 
 - Custom calendars and era systems defined in settings
@@ -595,9 +599,13 @@ Tools designed for worldbuilders, novelists, and RPG creators who document ficti
 - Calendarium integration for calendars defined in the Calendarium plugin
 - Date parsing and display respects the active universe's calendar
 
+[Guide: Set up a custom calendar with eras →](/guides/worldbuilding/set-up-custom-calendar/)
+
 ### Custom Image Maps
 
 See [Geographic features](#geographic-features) above. Maps support pixel-coordinate systems ideal for fictional worlds, linked-map drill-down for multi-scale worldbuilding, and child-map region editing.
+
+[Guide: Create a custom map of my fictional world →](/guides/worldbuilding/create-custom-image-map/)
 
 ### Organizations
 
