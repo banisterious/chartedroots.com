@@ -18,7 +18,9 @@ No. The plugin stores data in YAML frontmatter in your markdown notes, a simple 
 
 ### How do I install it?
 
-The plugin is currently distributed through [BRAT](https://github.com/TfTHacker/obsidian42-brat), a community tool for beta plugins. Install BRAT from Obsidian's Community Plugins, then add `banisterious/obsidian-charted-roots` as a beta plugin. Listing in the main Community Plugins directory is pending review. [Full install guide →](https://github.com/banisterious/obsidian-charted-roots/wiki/Getting-Started#installation)
+Open Obsidian's Community Plugins, search for **Charted Roots**, then click Install → Enable. That's it.
+
+For early access to releases before they reach the directory, use [BRAT](https://github.com/TfTHacker/obsidian42-brat) and add `banisterious/obsidian-charted-roots` as a beta plugin. [Full install guide →](https://github.com/banisterious/obsidian-charted-roots/wiki/Getting-Started#installation)
 
 ### Is it free?
 

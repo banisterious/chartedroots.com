@@ -61,15 +61,18 @@ Smart duplicate detection, merge wizard, schema validation, and a 14-step post-i
 
 ## Getting Started
 
-1. **Install via BRAT** (Recommended)
+1. **From Community Plugins** (Recommended)
+   - Open Obsidian's Community Plugins, search for **Charted Roots**, then Install → Enable.
+
+2. **Via BRAT** (early access to pre-release builds)
    - Install the [BRAT plugin](https://github.com/TfTHacker/obsidian42-brat)
    - Add repository: `https://github.com/banisterious/obsidian-charted-roots`
 
-2. **Manual Installation**
+3. **Manual Installation**
    - Download from [releases](https://github.com/banisterious/obsidian-charted-roots/releases)
    - Extract to your vault's `.obsidian/plugins/` folder
 
-3. **From Source**
+4. **From Source**
    ```bash
    git clone https://github.com/banisterious/obsidian-charted-roots
    npm install && npm run build
