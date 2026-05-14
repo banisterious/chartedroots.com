@@ -8,6 +8,14 @@
     {{ with .Site.Params.description }}
       <p class="cr-hero__tagline">{{ . | markdownify }}</p>
     {{ end }}
+    <div class="cr-install-cta">
+      <a href="obsidian://show-plugin?id=charted-roots" class="cr-install-button">
+        <span>Install in Obsidian</span>
+      </a>
+      <p class="cr-install-fallback">
+        No Obsidian yet? <a href="https://obsidian.md">Get it here</a> — it's free.
+      </p>
+    </div>
     <div class="cr-hero__actions">
       <a class="!rounded-md bg-primary-600 px-4 py-2 !text-neutral !no-underline hover:!bg-primary-500"
          href="https://github.com/banisterious/obsidian-charted-roots"

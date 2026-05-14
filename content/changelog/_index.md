@@ -5,6 +5,8 @@ description: "Version history and release spotlights for Charted Roots, with cur
 
 For the full per-release log, see [GitHub Releases](https://github.com/banisterious/obsidian-charted-roots/releases). This page groups headline changes by release cluster.
 
+{{< install-button >}}
+
 ---
 
 ## v0.22.x: Stability run before 1.0
