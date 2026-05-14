@@ -110,6 +110,11 @@ enableEmoji = true
     pageRef = "changelog"
     weight = 4
   [[menu.main]]
+    name = "Install from Obsidian Community"
+    pre = "obsidian"
+    url = "https://community.obsidian.md/plugins/charted-roots"
+    weight = 35
+  [[menu.main]]
     pre = "github"
     url = "https://github.com/banisterious/obsidian-charted-roots"
     weight = 40
