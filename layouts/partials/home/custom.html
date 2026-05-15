@@ -1,5 +1,14 @@
 {{ $hero := resources.Get "img/hero.svg" }}
 <article class="max-w-full prose dark:prose-invert">
+  {{ if .Site.Params.showMigrationBanner }}
+  <aside class="cr-migration-banner not-prose" role="region" aria-label="Migration notice">
+    <p class="cr-migration-banner__body">
+      <strong>Charted Roots is now in the Community Plugins directory.</strong>
+      If you originally installed via BRAT, <a href="/faq/#i-installed-via-brat--should-i-switch">here's the 3-step switch</a> — recommended for simpler updates.
+    </p>
+    <button type="button" class="cr-migration-banner__dismiss" aria-label="Dismiss notice">&times;</button>
+  </aside>
+  {{ end }}
   <section class="cr-hero">
     {{ with $hero }}
       <img class="cr-hero__seal nozoom" src="{{ .RelPermalink }}" alt="Charted Roots seal" width="360" height="360">

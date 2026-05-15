@@ -64,6 +64,56 @@ code, pre, kbd, samp {
   width: auto;
 }
 
+/* Temporary BRAT → Community Plugins migration banner.
+   Rendered above the homepage hero when params.showMigrationBanner is true.
+   Dismiss action persists in localStorage via static/js/cr-migration-banner.js. */
+.cr-migration-banner {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin: 1rem 0 0;
+  padding: 0.875rem 2.5rem 0.875rem 1rem;
+  background: rgb(var(--color-neutral-100));
+  border: 1px solid rgb(var(--color-neutral-200));
+  border-left: 4px solid rgb(var(--color-primary-600));
+  border-radius: 0.375rem;
+  color: rgb(var(--color-neutral-800));
+  font-family: var(--cr-font-serif);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.cr-migration-banner__body {
+  margin: 0;
+  flex: 1;
+}
+.cr-migration-banner__body a {
+  color: rgb(var(--color-primary-600));
+  font-weight: 600;
+}
+.cr-migration-banner__body a:hover,
+.cr-migration-banner__body a:focus {
+  text-decoration: underline;
+}
+.cr-migration-banner__dismiss {
+  position: absolute;
+  top: 0.375rem;
+  right: 0.5rem;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: rgb(var(--color-neutral-600));
+  border-radius: 0.25rem;
+}
+.cr-migration-banner__dismiss:hover,
+.cr-migration-banner__dismiss:focus {
+  color: rgb(var(--color-primary-600));
+  background: rgb(var(--color-neutral-200));
+}
+
 /* Homepage hero — primary-seal ground */
 .cr-hero {
   padding: 4rem 1rem 3rem;
