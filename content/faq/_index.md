@@ -24,6 +24,18 @@ Or open Obsidian's Community Plugins, search for **Charted Roots**, then click I
 
 For early access to releases before they reach the directory, use [BRAT](https://github.com/TfTHacker/obsidian42-brat) and add `banisterious/obsidian-charted-roots` as a beta plugin. [Full install guide →](https://github.com/banisterious/obsidian-charted-roots/wiki/Getting-Started#installation)
 
+### I installed via BRAT — should I switch?
+
+Yes, if you want simpler updates. Charted Roots is now in the main Community Plugins directory, and updates come through Obsidian's built-in update flow instead of BRAT's beta-plugin polling.
+
+**To switch:**
+
+1. In Obsidian, open Settings → Community plugins → Browse, search for "Charted Roots", and click Install. Your existing data and settings are preserved — Obsidian keeps the plugin's `data.json` under your vault's `.obsidian/plugins/charted-roots/` regardless of which channel installed it.
+2. Open the BRAT plugin's settings, find Charted Roots in the "Beta plugin list", and remove it. This stops BRAT from auto-updating the plugin going forward.
+3. Updates now arrive through the directory — check Settings → Community plugins → Check for updates.
+
+**Keep BRAT if** you want early access to release candidates or beta tags before they reach the directory. You can also keep BRAT installed for other plugins — removing Charted Roots from BRAT's beta-list doesn't affect anything else.
+
 ### Is it free?
 
 Yes. MIT-licensed and free to use. Donations are welcome via [Buy Me a Coffee](https://buymeacoffee.com/banisterious) or [GitHub Sponsors](https://github.com/sponsors/banisterious) but never required.
